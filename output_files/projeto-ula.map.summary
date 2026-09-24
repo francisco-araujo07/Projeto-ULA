@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 24 11:41:32 2026
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : projeto-ula
+Top-level Entity Name : somador_5bit
+Family : Cyclone IV E
+Total logic elements : 12
+    Total combinational functions : 12
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
