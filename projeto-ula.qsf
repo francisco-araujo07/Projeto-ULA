@@ -39,22 +39,20 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY "enable-dec"
+set_global_assignment -name TOP_LEVEL_ENTITY Xor_5bits
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:32:41  SEPTEMBER 24, 2026"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name BDF_FILE And_5bits.bdf
 set_global_assignment -name BDF_FILE Xor_5bits.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name BDF_FILE Igual_5bits.bdf
 set_global_assignment -name BDF_FILE Maior_1bit.bdf
 set_global_assignment -name BDF_FILE Somador_5bits.bdf
 set_global_assignment -name BDF_FILE Somador_1bit.bdf
-set_global_assignment -name BDF_FILE "enable-dec.bdf"
+set_global_assignment -name BDF_FILE Maior_5bits.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name BDF_FILE Maior_5bits.bdf
+set_global_assignment -name BDF_FILE Menor_5bits.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
