@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 968 288 1144 304)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "F_AND[5..0]" (rect 90 0 152 12)(font "Arial" ))
+	(text "F_XOR[5..0]" (rect 90 0 151 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))

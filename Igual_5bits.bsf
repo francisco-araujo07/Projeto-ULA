@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 136 112)
+	(rect 16 16 168 112)
 	(text "Igual_5bits" (rect 5 0 71 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
@@ -39,13 +39,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 120 32)
+		(pt 152 32)
 		(output)
-		(text "A = B" (rect 0 0 31 19)(font "Intel Clear" (font_size 8)))
-		(text "A = B" (rect 68 27 99 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 120 32)(pt 104 32))
+		(text "A_igual_B" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
+		(text "A_igual_B" (rect 72 27 131 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 80))
+		(rectangle (rect 16 16 136 80))
 	)
 )

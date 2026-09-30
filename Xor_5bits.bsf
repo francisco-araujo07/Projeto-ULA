@@ -41,8 +41,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 160 32)
 		(output)
-		(text "F_AND[5..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
-		(text "F_AND[5..0]" (rect 68 27 139 46)(font "Intel Clear" (font_size 8)))
+		(text "F_XOR[5..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
+		(text "F_XOR[5..0]" (rect 69 27 139 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing
