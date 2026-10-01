@@ -1,0 +1,398 @@
+{
+  "ADD_SUB6": {
+    "ports": {
+      "X[5..0]": "input",
+      "Y[5..0]": "input",
+      "SUB": "input",
+      "R[5..0]": "output",
+      "COUT": "output"
+    },
+    "children": [
+      "ADD_SUB_BIT",
+      "ADD_SUB_BIT",
+      "ADD_SUB_BIT",
+      "ADD_SUB_BIT",
+      "ADD_SUB_BIT",
+      "ADD_SUB_BIT"
+    ],
+    "sha256": "dc92f7848b3efb3f5e126e6ed096ff11fd1e980b3a98de30ed8326b6ed5a4ce9"
+  },
+  "ADD_SUB_BIT": {
+    "ports": {
+      "X": "input",
+      "Y": "input",
+      "SUB": "input",
+      "CI": "input",
+      "CO": "output",
+      "R": "output"
+    },
+    "children": [
+      "somador_1bit"
+    ],
+    "sha256": "975d3bd5851c11e1c1eafb5e449da957a3bcdc9b3c3d9f1cdbb7fccdf4b51c11"
+  },
+  "And_5bits": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "F[5..0]": "output"
+    },
+    "children": [],
+    "sha256": "948368a11c93bcb8e60e9ba8388adefd4155668fe3adcc8a694b41ddb8d96907"
+  },
+  "ARITMETICA": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "SUB": "input",
+      "F[5..0]": "output"
+    },
+    "children": [
+      "SM_C2",
+      "SM_C2",
+      "ADD_SUB6",
+      "C2_SM"
+    ],
+    "sha256": "b7236d9356a43b0cc0c274cb80da04f1e14bc22f44a9a8621385fc4a961e6df0"
+  },
+  "BIN_DC6bits": {
+    "ports": {
+      "F[5..0]": "input",
+      "D[1..0]": "output",
+      "U[3..0]": "output",
+      "LED_SINAL": "output"
+    },
+    "children": [],
+    "sha256": "1635caa2eab17ea615ceedeb7e79515d8fc7f10e904bc71c71d70dc8dce950f6"
+  },
+  "C2_SM": {
+    "ports": {
+      "R[5..0]": "input",
+      "F[5..0]": "output"
+    },
+    "children": [
+      "ADD_SUB6"
+    ],
+    "sha256": "15bd60134df2b25ce5c0d8e9f6426c1eb592eb987341b32b4655d52d08943d4c"
+  },
+  "Complemento_2": {
+    "ports": {
+      "B[4..0]": "input",
+      "F[5..0]": "output"
+    },
+    "children": [
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit"
+    ],
+    "sha256": "1d074a5f07d79bc9dd27ae076f2075d92b2a4854510ac4941212215cadb59ac4"
+  },
+  "CONTROLE": {
+    "ports": {
+      "S[2..0]": "input",
+      "SUB": "output",
+      "ENF": "output",
+      "EQ": "input",
+      "GT": "input",
+      "LT": "input",
+      "STATUS": "output"
+    },
+    "children": [],
+    "sha256": "69d87de9d624682ebaf98add0aaea8fb1f18c4b659d39f04979d6763ea16269b"
+  },
+  "decod_7seg_base": {
+    "ports": {
+      "MAG[4..0]": "input",
+      "EN": "input",
+      "HEX_UNI[6..0]": "output",
+      "HEX_DEZ[6..0]": "output"
+    },
+    "children": [
+      "decod_7seg_unidade",
+      "ENABLE7",
+      "decod_7seg_dezena",
+      "ENABLE7"
+    ],
+    "sha256": "56654af409bec90b928a2e5c00d6f979a8d4c55d7f76d30a20f6520d3867a320"
+  },
+  "decod_7seg_dezena": {
+    "ports": {
+      "MAG[4..0]": "input",
+      "HEX_DEZ[6..0]": "output"
+    },
+    "children": [],
+    "sha256": "630bc2571ec0455586292450152fb378e95304e069dcd5da3ea6a3f950fd77fa"
+  },
+  "decod_7seg_unidade": {
+    "ports": {
+      "MAG[4..0]": "input",
+      "HEX_UNI[6..0]": "output"
+    },
+    "children": [],
+    "sha256": "0a550fc26492476ab374875f5ab63b34d5ff1ffe66a4dd00803e59666ae7ac36"
+  },
+  "decof7_dezena": {
+    "ports": {
+      "MAG[4..0]": "input",
+      "HEX_DEZ[6..0]": "output"
+    },
+    "children": [
+      "decod_7seg_dezena"
+    ],
+    "sha256": "63e7d346efec807331591a2ac641495685a1eb31d9c30ad3dc9122cdc5b21e4c"
+  },
+  "decof7_unidade": {
+    "ports": {
+      "MAG[4..0]": "input",
+      "HEX_UNI[6..0]": "output"
+    },
+    "children": [
+      "decod_7seg_unidade"
+    ],
+    "sha256": "edca85de5db74c782f6d176946f291453d2497b617f19f240859d395a596f352"
+  },
+  "ENABLE7": {
+    "ports": {
+      "HEX_IN[6..0]": "input",
+      "EN": "input",
+      "HEX_OUT[6..0]": "output"
+    },
+    "children": [],
+    "sha256": "7043c8c4bbf7eb20a1cdb544352505faf4665441a15c726a83b5907c7f5c0544"
+  },
+  "Igual_5bits": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "A_igual_B": "output"
+    },
+    "children": [],
+    "sha256": "15c1fe66b98b3f515735dad01617fb8e91ecae614c60f88d74fd373a7573692a"
+  },
+  "LEDS_ULA": {
+    "ports": {
+      "SW[12..0]": "input",
+      "F[5..0]": "input",
+      "STATUS": "input",
+      "LEDR[17..0]": "output",
+      "LEDG[8..0]": "output"
+    },
+    "children": [],
+    "sha256": "a9be90c9aabd0f959f13557d9b95b04a32780382e8cde0a369b78d2736cfff23"
+  },
+  "MAG_ENTRADA": {
+    "ports": {
+      "X[4..0]": "input",
+      "MAG[4..0]": "output"
+    },
+    "children": [],
+    "sha256": "10d67fa57e1e4613240e2e1b9ab60618bcb5d47142fb23d740dfd8a12487c77d"
+  },
+  "Maior_1bit": {
+    "ports": {
+      "A": "input",
+      "B": "input",
+      "A_maior_que_B": "output"
+    },
+    "children": [],
+    "sha256": "974dbb446f1318abb375aa1769e8cee35216a8337dfdc1dce8434bfbe9c6445e"
+  },
+  "Maior_4bits": {
+    "ports": {
+      "A[3..0]": "input",
+      "B[3..0]": "input",
+      "A_maior_que_B": "output"
+    },
+    "children": [
+      "Maior_1bit",
+      "Maior_1bit",
+      "Maior_1bit",
+      "Maior_1bit"
+    ],
+    "sha256": "0fef4784add67369f5efd662410b099532fa684ea54770eb572e72704ef919e7"
+  },
+  "Maior_5bits": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "A_maior_que_B": "output"
+    },
+    "children": [
+      "Maior_4bits",
+      "Maior_4bits",
+      "Igual_5bits"
+    ],
+    "sha256": "187853aa33748da576ed5382522f4475418a8c8478f0aaaa4197e3431cdb7610"
+  },
+  "Menor_5bits": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "A_menor_que_B": "output"
+    },
+    "children": [
+      "Maior_5bits",
+      "Igual_5bits"
+    ],
+    "sha256": "8290c8bbec052592a45b44628b534a0c7c3f95245ca383c98097cdc3aa85d05f"
+  },
+  "MUX1": {
+    "ports": {
+      "D0": "input",
+      "D1": "input",
+      "SEL": "input",
+      "Y": "output"
+    },
+    "children": [],
+    "sha256": "8178223eadac224edeb88621a9c18ce3aea183c82abc31215ad00d127a918e92"
+  },
+  "MUX2_6": {
+    "ports": {
+      "D0[5..0]": "input",
+      "D1[5..0]": "input",
+      "SEL": "input",
+      "Y[5..0]": "output"
+    },
+    "children": [
+      "MUX1",
+      "MUX1",
+      "MUX1",
+      "MUX1",
+      "MUX1",
+      "MUX1"
+    ],
+    "sha256": "5e85798b3526bb21b7f8ef86802e90c6409e288640f9d981c6b9fd56c7647afd"
+  },
+  "MUX8_6": {
+    "ports": {
+      "D0[5..0]": "input",
+      "D1[5..0]": "input",
+      "D2[5..0]": "input",
+      "D3[5..0]": "input",
+      "D4[5..0]": "input",
+      "D5[5..0]": "input",
+      "D6[5..0]": "input",
+      "D7[5..0]": "input",
+      "F[5..0]": "output",
+      "S[2..0]": "input"
+    },
+    "children": [
+      "MUX2_6",
+      "MUX2_6",
+      "MUX2_6",
+      "MUX2_6",
+      "MUX2_6",
+      "MUX2_6",
+      "MUX2_6"
+    ],
+    "sha256": "3e29d0a71ebf728684f0df1db15a4456cadbf69b2af440c8835885836c05f746"
+  },
+  "SM_C2": {
+    "ports": {
+      "A[4..0]": "input",
+      "R[5..0]": "output"
+    },
+    "children": [
+      "ADD_SUB6"
+    ],
+    "sha256": "cdcef9f1b56d8c54c06120831140ec99481e079d21be8ad97fe75068110c28db"
+  },
+  "somador_1bit": {
+    "ports": {
+      "A": "input",
+      "B": "input",
+      "Cin": "input",
+      "Cout": "output",
+      "S": "output"
+    },
+    "children": [],
+    "sha256": "70f3d1cc72f95b3cf310704b45150017e4cc37c2868598689611e2c9290088a2"
+  },
+  "somador_5bit": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "Cout": "output",
+      "S[4..0]": "output"
+    },
+    "children": [
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit",
+      "somador_1bit"
+    ],
+    "sha256": "a72eb866f623e04f6938501bffbf6503922ab1ce47ab8ee764a43abc4b80388e"
+  },
+  "Somador_5bits": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "Cout": "output",
+      "S[4..0]": "output"
+    },
+    "children": [
+      "somador_5bit"
+    ],
+    "sha256": "6180a9d34682c03f3b9029345f3c692597ca417015944a291a2fc6d6295adb1a"
+  },
+  "TOP": {
+    "ports": {
+      "SW[12..0]": "input",
+      "HEX4[6..0]": "output",
+      "HEX5[6..0]": "output",
+      "HEX2[6..0]": "output",
+      "HEX3[6..0]": "output",
+      "HEX0[6..0]": "output",
+      "HEX1[6..0]": "output",
+      "LEDR[17..0]": "output",
+      "LEDG[8..0]": "output",
+      "HEX6[6..0]": "output",
+      "HEX7[6..0]": "output"
+    },
+    "children": [
+      "ULA",
+      "MAG_ENTRADA",
+      "decod_7seg_base",
+      "MAG_ENTRADA",
+      "decod_7seg_base",
+      "decod_7seg_base",
+      "LEDS_ULA"
+    ],
+    "sha256": "4f2f0bc36deeaa111e589f1358c52bc47022eb91508ea0cf73c0e01c9ce3fbcd"
+  },
+  "ULA": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "S[2..0]": "input",
+      "ENF": "output",
+      "STATUS": "output",
+      "F[5..0]": "output"
+    },
+    "children": [
+      "ARITMETICA",
+      "Complemento_2",
+      "Igual_5bits",
+      "Maior_5bits",
+      "Menor_5bits",
+      "And_5bits",
+      "Xor_5bits",
+      "CONTROLE",
+      "MUX8_6"
+    ],
+    "sha256": "05ebfeed0cfdaf2b36bbe59350329a6d59db668b05196ad2c0f5de48b2337d75"
+  },
+  "Xor_5bits": {
+    "ports": {
+      "A[4..0]": "input",
+      "B[4..0]": "input",
+      "F[5..0]": "output"
+    },
+    "children": [],
+    "sha256": "488961486249a489d5f609d2ec9d317f1e7df25a97b36f8801f7dc2df48588bb"
+  }
+}

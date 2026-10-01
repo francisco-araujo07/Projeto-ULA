@@ -1,0 +1,302 @@
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Oct  1 01:31:58 2026
+Info: Command: quartus_sh --flow compile projeto-ula
+Info: Quartus(args): compile projeto-ula
+Info: Project Name = C:/Users/mathe/Downloads/projeto_ula/projeto-ula
+Info: Revision Name = projeto-ula
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Thu Oct  1 01:31:58 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto-ula -c projeto-ula
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file add_sub6.bdf
+    Info (12023): Found entity 1: ADD_SUB6
+Info (12021): Found 1 design units, including 1 entities, in source file add_sub_bit.bdf
+    Info (12023): Found entity 1: ADD_SUB_BIT
+Info (12021): Found 1 design units, including 1 entities, in source file and_5bits.bdf
+    Info (12023): Found entity 1: And_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file aritmetica.bdf
+    Info (12023): Found entity 1: ARITMETICA
+Info (12021): Found 1 design units, including 1 entities, in source file bin_dc6bits.bdf
+    Info (12023): Found entity 1: BIN_DC6bits
+Info (12021): Found 1 design units, including 1 entities, in source file c2_sm.bdf
+    Info (12023): Found entity 1: C2_SM
+Info (12021): Found 1 design units, including 1 entities, in source file complemento_2.bdf
+    Info (12023): Found entity 1: Complemento_2
+Info (12021): Found 1 design units, including 1 entities, in source file controle.bdf
+    Info (12023): Found entity 1: CONTROLE
+Info (12021): Found 1 design units, including 1 entities, in source file decod_7seg_base.bdf
+    Info (12023): Found entity 1: decod_7seg_base
+Info (12021): Found 1 design units, including 1 entities, in source file decod_7seg_dezena.bdf
+    Info (12023): Found entity 1: decod_7seg_dezena
+Info (12021): Found 1 design units, including 1 entities, in source file decod_7seg_unidade.bdf
+    Info (12023): Found entity 1: decod_7seg_unidade
+Info (12021): Found 1 design units, including 1 entities, in source file decof7_dezena.bdf
+    Info (12023): Found entity 1: decof7_dezena
+Info (12021): Found 1 design units, including 1 entities, in source file decof7_unidade.bdf
+    Info (12023): Found entity 1: decof7_unidade
+Info (12021): Found 1 design units, including 1 entities, in source file enable7.bdf
+    Info (12023): Found entity 1: ENABLE7
+Info (12021): Found 1 design units, including 1 entities, in source file igual_5bits.bdf
+    Info (12023): Found entity 1: Igual_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file leds_ula.bdf
+    Info (12023): Found entity 1: LEDS_ULA
+Info (12021): Found 1 design units, including 1 entities, in source file mag_entrada.bdf
+    Info (12023): Found entity 1: MAG_ENTRADA
+Info (12021): Found 1 design units, including 1 entities, in source file maior_1bit.bdf
+    Info (12023): Found entity 1: Maior_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file maior_4bits.bdf
+    Info (12023): Found entity 1: Maior_4bits
+Info (12021): Found 1 design units, including 1 entities, in source file maior_5bits.bdf
+    Info (12023): Found entity 1: Maior_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file menor_5bits.bdf
+    Info (12023): Found entity 1: Menor_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file mux1.bdf
+    Info (12023): Found entity 1: MUX1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_6.bdf
+    Info (12023): Found entity 1: MUX2_6
+Info (12021): Found 1 design units, including 1 entities, in source file mux8_6.bdf
+    Info (12023): Found entity 1: MUX8_6
+Info (12021): Found 1 design units, including 1 entities, in source file sm_c2.bdf
+    Info (12023): Found entity 1: SM_C2
+Info (12021): Found 1 design units, including 1 entities, in source file somador_1bit.bdf
+    Info (12023): Found entity 1: somador_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file somador_5bit.bdf
+    Info (12023): Found entity 1: somador_5bit
+Info (12021): Found 1 design units, including 1 entities, in source file somador_5bits.bdf
+    Info (12023): Found entity 1: Somador_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
+    Info (12023): Found entity 1: TOP
+Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
+    Info (12023): Found entity 1: ULA
+Info (12021): Found 1 design units, including 1 entities, in source file xor_5bits.bdf
+    Info (12023): Found entity 1: Xor_5bits
+Info (12127): Elaborating entity "TOP" for the top level hierarchy
+Info (12128): Elaborating entity "decod_7seg_base" for hierarchy "decod_7seg_base:display_result"
+Info (12128): Elaborating entity "ENABLE7" for hierarchy "decod_7seg_base:display_result|ENABLE7:enable1"
+Info (12128): Elaborating entity "decod_7seg_dezena" for hierarchy "decod_7seg_base:display_result|decod_7seg_dezena:decoder1"
+Info (12128): Elaborating entity "decod_7seg_unidade" for hierarchy "decod_7seg_base:display_result|decod_7seg_unidade:decoder0"
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:core"
+Info (12128): Elaborating entity "CONTROLE" for hierarchy "ULA:core|CONTROLE:control"
+Info (12128): Elaborating entity "Igual_5bits" for hierarchy "ULA:core|Igual_5bits:equal"
+Info (12128): Elaborating entity "Maior_5bits" for hierarchy "ULA:core|Maior_5bits:greater"
+Info (12128): Elaborating entity "Maior_4bits" for hierarchy "ULA:core|Maior_5bits:greater|Maior_4bits:magnitude_ab"
+Info (12128): Elaborating entity "Maior_1bit" for hierarchy "ULA:core|Maior_5bits:greater|Maior_4bits:magnitude_ab|Maior_1bit:inst13"
+Info (12128): Elaborating entity "Menor_5bits" for hierarchy "ULA:core|Menor_5bits:less"
+Info (12128): Elaborating entity "MUX8_6" for hierarchy "ULA:core|MUX8_6:select_result"
+Info (12128): Elaborating entity "MUX2_6" for hierarchy "ULA:core|MUX8_6:select_result|MUX2_6:mux6"
+Info (12128): Elaborating entity "MUX1" for hierarchy "ULA:core|MUX8_6:select_result|MUX2_6:mux6|MUX1:bit0"
+Info (12128): Elaborating entity "ARITMETICA" for hierarchy "ULA:core|ARITMETICA:arithmetic"
+Info (12128): Elaborating entity "C2_SM" for hierarchy "ULA:core|ARITMETICA:arithmetic|C2_SM:convert_result"
+Info (12128): Elaborating entity "ADD_SUB6" for hierarchy "ULA:core|ARITMETICA:arithmetic|C2_SM:convert_result|ADD_SUB6:magnitude"
+Info (12128): Elaborating entity "ADD_SUB_BIT" for hierarchy "ULA:core|ARITMETICA:arithmetic|C2_SM:convert_result|ADD_SUB6:magnitude|ADD_SUB_BIT:bit5"
+Info (12128): Elaborating entity "somador_1bit" for hierarchy "ULA:core|ARITMETICA:arithmetic|C2_SM:convert_result|ADD_SUB6:magnitude|ADD_SUB_BIT:bit5|somador_1bit:adder"
+Info (12128): Elaborating entity "SM_C2" for hierarchy "ULA:core|ARITMETICA:arithmetic|SM_C2:convert_a"
+Info (12128): Elaborating entity "Complemento_2" for hierarchy "ULA:core|Complemento_2:raw_complement"
+Info (12128): Elaborating entity "And_5bits" for hierarchy "ULA:core|And_5bits:bit_and"
+Info (12128): Elaborating entity "Xor_5bits" for hierarchy "ULA:core|Xor_5bits:bit_xor"
+Info (12128): Elaborating entity "MAG_ENTRADA" for hierarchy "MAG_ENTRADA:magnitude_1"
+Info (12128): Elaborating entity "LEDS_ULA" for hierarchy "LEDS_ULA:leds"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC
+    Warning (13410): Pin "HEX3[2]" is stuck at GND
+    Warning (13410): Pin "HEX3[1]" is stuck at GND
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC
+    Warning (13410): Pin "HEX5[2]" is stuck at GND
+    Warning (13410): Pin "HEX5[1]" is stuck at GND
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC
+    Warning (13410): Pin "HEX6[5]" is stuck at VCC
+    Warning (13410): Pin "HEX6[4]" is stuck at VCC
+    Warning (13410): Pin "HEX6[3]" is stuck at VCC
+    Warning (13410): Pin "HEX6[2]" is stuck at VCC
+    Warning (13410): Pin "HEX6[1]" is stuck at VCC
+    Warning (13410): Pin "HEX6[0]" is stuck at VCC
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC
+    Warning (13410): Pin "HEX7[5]" is stuck at VCC
+    Warning (13410): Pin "HEX7[4]" is stuck at VCC
+    Warning (13410): Pin "HEX7[3]" is stuck at VCC
+    Warning (13410): Pin "HEX7[2]" is stuck at VCC
+    Warning (13410): Pin "HEX7[1]" is stuck at VCC
+    Warning (13410): Pin "HEX7[0]" is stuck at VCC
+    Warning (13410): Pin "LEDG[8]" is stuck at GND
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[17]" is stuck at GND
+    Warning (13410): Pin "LEDR[16]" is stuck at GND
+    Warning (13410): Pin "LEDR[15]" is stuck at GND
+    Warning (13410): Pin "LEDR[14]" is stuck at GND
+    Warning (13410): Pin "LEDR[13]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 83 output pins
+    Info (21061): Implemented 121 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Thu Oct  1 01:32:06 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Thu Oct  1 01:32:07 2026
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off projeto-ula -c projeto-ula
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = projeto-ula
+Info: Revision = projeto-ula
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (119006): Selected device EP4CE115F29C7 for design "projeto-ula"
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE40F29C7 is compatible
+    Info (176445): Device EP4CE40F29I7 is compatible
+    Info (176445): Device EP4CE30F29C7 is compatible
+    Info (176445): Device EP4CE30F29I7 is compatible
+    Info (176445): Device EP4CE55F29C7 is compatible
+    Info (176445): Device EP4CE55F29I7 is compatible
+    Info (176445): Device EP4CE75F29C7 is compatible
+    Info (176445): Device EP4CE75F29I7 is compatible
+    Info (176445): Device EP4CE115F29I7 is compatible
+Info (169124): Fitter converted 5 user pins into dedicated programming pins
+    Info (169125): Pin ~ALTERA_ASDO_DATA1~ is reserved at location F4
+    Info (169125): Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location E2
+    Info (169125): Pin ~ALTERA_DCLK~ is reserved at location P3
+    Info (169125): Pin ~ALTERA_DATA0~ is reserved at location N7
+    Info (169125): Pin ~ALTERA_nCEO~ is reserved at location P28
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'projeto-ula.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332144): No user constrained base clocks found in the design
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (144001): Generated suppressed messages file C:/Users/mathe/Downloads/projeto_ula/output_files/integracao/projeto-ula.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 6422 megabytes
+    Info: Processing ended: Thu Oct  1 01:32:15 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:14
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Thu Oct  1 01:32:16 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off projeto-ula -c projeto-ula
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 5000 megabytes
+    Info: Processing ended: Thu Oct  1 01:32:18 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+Info (293026): Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Thu Oct  1 01:32:19 2026
+Info: Command: quartus_sta projeto-ula -c projeto-ula
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'projeto-ula.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4968 megabytes
+    Info: Processing ended: Thu Oct  1 01:32:21 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+Info (293000): Quartus Prime Full Compilation was successful. 0 errors, 40 warnings
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/21.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Thu Oct  1 01:32:21 2026
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:01

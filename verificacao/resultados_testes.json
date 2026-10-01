@@ -1,0 +1,202 @@
+{
+  "result": "PASS",
+  "method": "Interpretação estrutural combinacional das netlists Verilog exportadas dos BDF pelo Quartus; sem atrasos.",
+  "cases": {
+    "somador_1bit": 8,
+    "somador_5bit": 1024,
+    "Somador_5bits_compat": 1024,
+    "Maior_1bit": 4,
+    "MUX1": 8,
+    "Maior_4bits": 256,
+    "Igual_5bits": 1024,
+    "Maior_5bits": 1024,
+    "Menor_5bits": 1024,
+    "And_5bits": 1024,
+    "Xor_5bits": 1024,
+    "ADD_SUB6": 8192,
+    "SM_C2": 32,
+    "Complemento_2": 32,
+    "MAG_ENTRADA": 32,
+    "C2_SM": 61,
+    "displays": 64,
+    "BIN_DC6bits": 64,
+    "MUX2_6": 768,
+    "MUX8_6": 384,
+    "CONTROLE": 64,
+    "ULA": 8192,
+    "TOP_leds_displays": 8192
+  },
+  "total": 33521,
+  "seconds": 7.23,
+  "explicit_cases": [
+    {
+      "A": "01111",
+      "B": "01111",
+      "S": "000",
+      "F": "011110",
+      "STATUS": 0,
+      "ENF": 1
+    },
+    {
+      "A": "11111",
+      "B": "11111",
+      "S": "000",
+      "F": "111110",
+      "STATUS": 0,
+      "ENF": 1
+    },
+    {
+      "A": "00011",
+      "B": "10100",
+      "S": "000",
+      "F": "100001",
+      "STATUS": 0,
+      "ENF": 1
+    },
+    {
+      "A": "10011",
+      "B": "00100",
+      "S": "001",
+      "F": "100111",
+      "STATUS": 0,
+      "ENF": 1
+    },
+    {
+      "A": "00011",
+      "B": "10100",
+      "S": "001",
+      "F": "000111",
+      "STATUS": 0,
+      "ENF": 1
+    },
+    {
+      "A": "10000",
+      "B": "00000",
+      "S": "011",
+      "F": "000000",
+      "STATUS": 1,
+      "ENF": 0
+    },
+    {
+      "A": "10011",
+      "B": "10100",
+      "S": "100",
+      "F": "000000",
+      "STATUS": 1,
+      "ENF": 0
+    },
+    {
+      "A": "10100",
+      "B": "10011",
+      "S": "101",
+      "F": "000000",
+      "STATUS": 1,
+      "ENF": 0
+    },
+    {
+      "A": "10011",
+      "B": "10101",
+      "S": "110",
+      "F": "100001",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "10011",
+      "B": "10101",
+      "S": "111",
+      "F": "000110",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "00000",
+      "S": "010",
+      "F": "000000",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "00001",
+      "S": "010",
+      "F": "111111",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "00011",
+      "S": "010",
+      "F": "111101",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "01111",
+      "S": "010",
+      "F": "110001",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "10000",
+      "S": "010",
+      "F": "010000",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "10011",
+      "S": "010",
+      "F": "001101",
+      "STATUS": 0,
+      "ENF": 0
+    },
+    {
+      "A": "00000",
+      "B": "11111",
+      "S": "010",
+      "F": "000001",
+      "STATUS": 0,
+      "ENF": 0
+    }
+  ],
+  "bdf_sha256": {
+    "ADD_SUB6.bdf": "dc92f7848b3efb3f5e126e6ed096ff11fd1e980b3a98de30ed8326b6ed5a4ce9",
+    "ADD_SUB_BIT.bdf": "975d3bd5851c11e1c1eafb5e449da957a3bcdc9b3c3d9f1cdbb7fccdf4b51c11",
+    "And_5bits.bdf": "948368a11c93bcb8e60e9ba8388adefd4155668fe3adcc8a694b41ddb8d96907",
+    "ARITMETICA.bdf": "b7236d9356a43b0cc0c274cb80da04f1e14bc22f44a9a8621385fc4a961e6df0",
+    "BIN_DC6bits.bdf": "1635caa2eab17ea615ceedeb7e79515d8fc7f10e904bc71c71d70dc8dce950f6",
+    "C2_SM.bdf": "15bd60134df2b25ce5c0d8e9f6426c1eb592eb987341b32b4655d52d08943d4c",
+    "Complemento_2.bdf": "1d074a5f07d79bc9dd27ae076f2075d92b2a4854510ac4941212215cadb59ac4",
+    "CONTROLE.bdf": "69d87de9d624682ebaf98add0aaea8fb1f18c4b659d39f04979d6763ea16269b",
+    "decod_7seg_base.bdf": "56654af409bec90b928a2e5c00d6f979a8d4c55d7f76d30a20f6520d3867a320",
+    "decod_7seg_dezena.bdf": "630bc2571ec0455586292450152fb378e95304e069dcd5da3ea6a3f950fd77fa",
+    "decod_7seg_unidade.bdf": "0a550fc26492476ab374875f5ab63b34d5ff1ffe66a4dd00803e59666ae7ac36",
+    "decof7_dezena.bdf": "63e7d346efec807331591a2ac641495685a1eb31d9c30ad3dc9122cdc5b21e4c",
+    "decof7_unidade.bdf": "edca85de5db74c782f6d176946f291453d2497b617f19f240859d395a596f352",
+    "ENABLE7.bdf": "7043c8c4bbf7eb20a1cdb544352505faf4665441a15c726a83b5907c7f5c0544",
+    "Igual_5bits.bdf": "15c1fe66b98b3f515735dad01617fb8e91ecae614c60f88d74fd373a7573692a",
+    "LEDS_ULA.bdf": "a9be90c9aabd0f959f13557d9b95b04a32780382e8cde0a369b78d2736cfff23",
+    "MAG_ENTRADA.bdf": "10d67fa57e1e4613240e2e1b9ab60618bcb5d47142fb23d740dfd8a12487c77d",
+    "Maior_1bit.bdf": "974dbb446f1318abb375aa1769e8cee35216a8337dfdc1dce8434bfbe9c6445e",
+    "Maior_4bits.bdf": "0fef4784add67369f5efd662410b099532fa684ea54770eb572e72704ef919e7",
+    "Maior_5bits.bdf": "187853aa33748da576ed5382522f4475418a8c8478f0aaaa4197e3431cdb7610",
+    "Menor_5bits.bdf": "8290c8bbec052592a45b44628b534a0c7c3f95245ca383c98097cdc3aa85d05f",
+    "MUX1.bdf": "8178223eadac224edeb88621a9c18ce3aea183c82abc31215ad00d127a918e92",
+    "MUX2_6.bdf": "5e85798b3526bb21b7f8ef86802e90c6409e288640f9d981c6b9fd56c7647afd",
+    "MUX8_6.bdf": "3e29d0a71ebf728684f0df1db15a4456cadbf69b2af440c8835885836c05f746",
+    "SM_C2.bdf": "cdcef9f1b56d8c54c06120831140ec99481e079d21be8ad97fe75068110c28db",
+    "somador_1bit.bdf": "70f3d1cc72f95b3cf310704b45150017e4cc37c2868598689611e2c9290088a2",
+    "somador_5bit.bdf": "a72eb866f623e04f6938501bffbf6503922ab1ce47ab8ee764a43abc4b80388e",
+    "Somador_5bits.bdf": "6180a9d34682c03f3b9029345f3c692597ca417015944a291a2fc6d6295adb1a",
+    "TOP.bdf": "4f2f0bc36deeaa111e589f1358c52bc47022eb91508ea0cf73c0e01c9ce3fbcd",
+    "ULA.bdf": "05ebfeed0cfdaf2b36bbe59350329a6d59db668b05196ad2c0f5de48b2337d75",
+    "Xor_5bits.bdf": "488961486249a489d5f609d2ec9d317f1e7df25a97b36f8801f7dc2df48588bb"
+  }
+}
