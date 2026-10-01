@@ -6,7 +6,7 @@ Análise realizada em 01/10/2026, atualizada após receber `Complemento_2.bdf`. 
 
 O único PDF encontrado é `Guia_Visual_ULA_Montagem_Manual.pdf`, com 35 páginas. Ele é um guia de uma arquitetura proposta, não o enunciado original. Na página 34, cita `Projeto_Primeira_Unidade_2026_2.pdf`, ausente na pasta, e informa que sua interpretação de `010` difere da implementação anterior.
 
-O usuário esclareceu que `010` calcula o complemento de dois do padrão bruto de B: inverter os bits e somar 1 na largura definida. Essa instrução prevalece sobre a negação numérica em sinal e magnitude proposta no guia. Não usar `NEG_SM`, troca de sinal ou conversão do resultado para sinal e magnitude nesse caminho. Depois, sugeriu, com ressalva, que B seja estendido antes do cálculo e forneceu `Complemento_2.bdf` para reaproveitamento. A proposta atual é adaptar esse arquivo para calcular em seis bits após extensão; confirmar se o bit acrescentado é 0 ou B4 e se F recebe os seis bits brutos diretamente. O arquivo recebido não resolve essa decisão. Se o enunciado original for fornecido, conferir também placa, pinagem e restrições de implementação. Não afirmar que todos os requisitos do enunciado foram verificados enquanto ele não estiver disponível.
+O usuário definiu `010` como complemento de dois do padrão bruto de B e confirmou a extensão: `B6={B[4],B[4..0]}`; calcular `F=(NOT(B6)+1) mod 64`, entregando os seis bits brutos diretamente em F[5..0]. Essa instrução prevalece sobre a negação numérica em sinal e magnitude proposta no guia. Não usar `NEG_SM`, troca de sinal ou conversão do resultado para sinal e magnitude nesse caminho. Reaproveitar e corrigir o arquivo fornecido `Complemento_2.bdf`, que atualmente não implementa essa regra completa. Não há pendência de definição funcional de 010. Se o enunciado original for fornecido, conferir também placa, pinagem e restrições de implementação. Não afirmar que todos os requisitos do enunciado foram verificados enquanto ele não estiver disponível.
 
 A prioridade solicitada é reaproveitar os BDF e BSF existentes, corrigindo-os. Portanto, a lista de blocos do guia serve como referência funcional e de organização; não justifica trocar uma biblioteca funcional por outra inteira.
 
@@ -21,7 +21,7 @@ A prioridade solicitada é reaproveitar os BDF e BSF existentes, corrigindo-os. 
 | Símbolo do somador | `somador_5bit.bsf` declara `Cin`, mas seu BDF não tem essa entrada. | Ajustar a interface conforme o uso aprovado e regenerar o símbolo. |
 | Somador de 1 bit | `somador_1bit.bdf/.bsf` tem A, B, Cin, S e Cout; contém 2 XOR, 2 AND e 1 OR. | Validar as oito combinações e reutilizar como célula aritmética. |
 | Complemento de dois recebido | `Complemento_2.bdf` tem entrada B[4..0], saída F[4..0], quatro NOT, quatro `somador_1bit`, um VCC e quatro GND. Foi copiado integralmente do arquivo fornecido pelo usuário. | Reaproveitar e corrigir esse esquema para 010; gerar `Complemento_2.bsf` depois de definir a interface e cadastrar o BDF no QSF durante a integração. |
-| Limites do complemento atual | A cadeia inverte apenas B0..B3, soma 1 via VCC no primeiro estágio e propaga carry pelos terminais B dos estágios seguintes, com Cin=0. Cout final não tem fio. Não há estágio de B4 nem sexto bit. | Não considerar esse arquivo um complemento de dois completo de cinco ou seis bits. Se aprovada a extensão antes do cálculo, ampliar a cadeia existente para seis estágios. Carry aplicado em B com Cin=0 é válido para esta soma; não é, por si só, um erro. |
+| Limites do complemento atual | A cadeia inverte apenas B0..B3, soma 1 via VCC no primeiro estágio e propaga carry pelos terminais B dos estágios seguintes, com Cin=0. Cout final não tem fio. Não há estágio de B4 nem sexto bit. | Ampliar a cadeia existente para seis estágios, com B6={B4,B[4..0]} antes da inversão, conforme confirmado pelo usuário. Carry aplicado em B com Cin=0 é válido para esta soma; não é, por si só, um erro. |
 | Conexão suspeita no complemento | O fio rotulado B[4] vai de (424,480) até (640,480), ponto onde também termina a derivação F[0]. Não há derivação identificada como F[4]. | Conferir no Quartus o conflito entre B4 e a saída do bit 0 e a falta do quinto bit de saída. Separar as redes e atribuir cada bit ao terminal correto antes de validar. |
 | Seleção | `MUX1`, `MUX2_6` e `MUX8_6` existem com símbolos; o último instancia sete `MUX2_6`. | Validar ordem D0/D1 e S0/S1/S2. Rever uso de conexões por nome em seletores distantes. |
 | Lógica | `And_5bits` e `Xor_5bits` têm saída de seis bits, resultado bruto nos bits F4..F0 e GND em F5. | Para seguir o guia, reposicionar o bit de sinal lógico em F5 e colocar zero em F4, reaproveitando as portas. |
@@ -39,13 +39,13 @@ O Quartus 21.1 está instalado em `C:/intelFPGA_lite/21.1/quartus/bin64`, embora
 
 ## Comportamento de referência, com a correção do usuário
 
-Para soma, subtração e comparação, A e B são cinco bits em sinal e magnitude, com sinal no bit 4 e magnitude nos bits 3..0; faixa numérica -15..+15. Nessas operações aritméticas, F tem sinal em F5 e magnitude em F4..F0. Soma e diferença alcançam -30..+30. Soma, subtração e comparação tratam +0 e -0 como o mesmo número. Em `010`, B é tratado como padrão de bits, e F contém o resultado binário segundo o mapeamento ainda a confirmar; não impor a interpretação de sinal e magnitude a esse resultado.
+Para soma, subtração e comparação, A e B são cinco bits em sinal e magnitude, com sinal no bit 4 e magnitude nos bits 3..0; faixa numérica -15..+15. Nessas operações aritméticas, F tem sinal em F5 e magnitude em F4..F0. Soma e diferença alcançam -30..+30. Soma, subtração e comparação tratam +0 e -0 como o mesmo número. Em `010`, estender o padrão bruto repetindo B4 e entregar diretamente o complemento de dois de seis bits em F; não impor a interpretação de sinal e magnitude a esse resultado.
 
 | S2 S1 S0 | Operação | F | STATUS | Displays de F |
 | --- | --- | --- | --- | --- |
 | 000 | A+B | Resultado em sinal e magnitude | 0 | Magnitude decimal |
 | 001 | A-B | Resultado em sinal e magnitude | 0 | Magnitude decimal |
-| 010 | Complemento de dois dos bits brutos de B | NOT(B) + 1, na largura e no mapeamento em F a confirmar | 0 | Apagados |
+| 010 | Complemento de dois após repetir B4 na extensão | `(NOT({B4,B[4..0]})+1) mod 64`, diretamente em F[5..0] | 0 | Apagados |
 | 011 | A=B | 000000 | Resultado da igualdade | Apagados |
 | 100 | A>B | 000000 | Resultado da comparação | Apagados |
 | 101 | A<B | 000000 | Resultado da comparação | Apagados |
@@ -54,22 +54,24 @@ Para soma, subtração e comparação, A e B são cinco bits em sinal e magnitud
 
 Nos caminhos lógicos, não normalizar o padrão de zero com sinal: o guia conserva o resultado bit a bit. A e B permanecem visíveis nos displays em todas as operações. Segmentos são ativos em zero, com ordem `[6..0]=gfedcba`; apagado é `1111111`.
 
-Para `010`, na largura n, calcular `C2(B) = ((NOT B) + 1) mod 2^n`. A inversão é limitada aos n bits e a soma propaga carry; não é uma inversão independente de cada bit de saída. A extensão de entrada e o mapeamento da saída fazem parte do contrato funcional, portanto devem ser definidos antes de montar esse caminho.
+Para `010`, primeiro formar B6={B4,B4,B3,B2,B1,B0}, depois inverter os seis bits e somar 1, descartando o carry além do bit 5. A soma propaga carry; não é uma inversão independente de cada bit de saída. Não complementar apenas quatro ou cinco bits para depois estender o resultado. Essa ordem e o mapeamento direto em F foram confirmados pelo usuário.
 
-Com a hipótese mais recente de cálculo após extensão para seis bits, a ordem importa: primeiro formar B6, depois inverter os seis bits e somar 1, descartando o carry além do bit 5. Confirmar uma das extensões:
+| B[4..0] bruto | B6 após extensão | F[5..0] esperado |
+| --- | --- | --- |
+| 00000 | 000000 | 000000 |
+| 00011 | 000011 | 111101 |
+| 01111 | 001111 | 110001 |
+| 10000 | 110000 | 010000 |
+| 10011 | 110011 | 001101 |
+| 11111 | 111111 | 000001 |
 
-| Regra candidata | B=00011 | B=10011 | B=10000 |
-| --- | --- | --- | --- |
-| B6={0,B[4..0]} | F=111101 | F=101101 | F=110000 |
-| B6={B4,B[4..0]} | F=111101 | F=001101 | F=010000 |
-
-As duas linhas pressupõem que F receba o resultado bruto de seis bits diretamente. São exemplos para decidir e testar, não requisitos já aprovados. Em ambos os casos, não interpretar `10000` como zero antes do cálculo. O comportamento atual de `Complemento_2.bdf` é diferente das duas propostas e precisa de correção.
+Não interpretar `10000` como zero antes desse cálculo. O comportamento atual de `Complemento_2.bdf` é diferente da regra confirmada e precisa de correção.
 
 ## Execução por etapas
 
 ### 1. Fechar as decisões que afetam o comportamento
 
-Aplicar o esclarecimento do usuário sobre `010` e tratar a extensão antes do cálculo como a proposta atual. Confirmar o valor do bit acrescentado e a entrega dos seis bits brutos em F. Não converter o "acho" do usuário em especificação definitiva. Conferir o enunciado original, se disponível. Confirmar se o alvo é a DE2-115: o guia indica EP4CE115F29C7, diferente do dispositivo dos relatórios antigos. Obter a pinagem de fonte confiável; não inventar pinos a partir dos nomes SW/HEX/LED.
+Aplicar a regra de 010 já confirmada: repetir B4 na extensão, complementar em seis bits e entregar o resultado bruto diretamente em F. Não solicitar nova confirmação dessa mesma escolha. Conferir o enunciado original, se disponível. Confirmar se o alvo é a DE2-115: o guia indica EP4CE115F29C7, diferente do dispositivo dos relatórios antigos. Obter a pinagem de fonte confiável; não inventar pinos a partir dos nomes SW/HEX/LED.
 
 Apresentar uma proposta curta de reaproveitamento antes de substituir estruturas existentes. A proposta preferida é corrigir e usar comparadores e decodificadores atuais. O caminho de comparação pela diferença e o decoder BCD compartilhado do guia são alternativas de otimização, cuja adoção exige avaliar a perda de reaproveitamento e validar a decisão com o usuário.
 
@@ -77,7 +79,7 @@ Apresentar uma proposta curta de reaproveitamento antes de substituir estruturas
 
 Comparar as duas versões do somador, definir a versão canônica e evitar duas implementações concorrentes. Uniformizar arquivo, entidade do BSF, referências dos símbolos inseridos e QSF. Regenerar os símbolos após alterações de porta e atualizar suas instâncias nos BDF pais: trocar somente o nome do arquivo não resolve interfaces antigas embutidas no desenho.
 
-Corrigir os nomes dos decodificadores e as referências ausentes em `decod_7seg_base`. Incluir `Complemento_2.bdf` no mapa da biblioteca, preservar seu nome e corrigir suas conexões e largura conforme a regra aprovada. Validar muxes, somador de 1 bit, complemento, lógica, comparadores e displays antes de integrá-los. Um bloco que já passa nos testes deve ser mantido; reparar somente a parte com defeito ou incompatibilidade comprovada.
+Corrigir os nomes dos decodificadores e as referências ausentes em `decod_7seg_base`. Incluir `Complemento_2.bdf` no mapa da biblioteca, preservar seu nome e corrigir suas conexões e largura conforme a regra confirmada. Validar muxes, somador de 1 bit, complemento, lógica, comparadores e displays antes de integrá-los. Um bloco que já passa nos testes deve ser mantido; reparar somente a parte com defeito ou incompatibilidade comprovada.
 
 ### 3. Completar a aritmética assinada
 
@@ -85,7 +87,7 @@ Criar uma célula soma/subtração com XOR em Y e uma instância do `somador_1bi
 
 Criar conversões reutilizáveis de sinal e magnitude para complemento de dois e de volta, ou adaptar a estrutura existente se uma solução menor atender ao mesmo comportamento. Na proposta do guia: `SM_C2` calcula `0 ± {0,0,M}` conforme o sinal; a operação usa um `ADD_SUB6`; `C2_SM` obtém a magnitude de R por `0 ± R`, conforme R5. Carry final não é sinal nem o bit extra de magnitude.
 
-Completar 010 no próprio `Complemento_2.bdf`, depois de confirmar extensão e mapeamento. Não criar `C2_B` ou outro esquema paralelo que substitua o arquivo recebido. Se aprovado o cálculo em seis bits, manter B[4..0] como entrada externa, montar B6 dentro do bloco com a extensão escolhida, completar seis inversões e seis estágios reutilizando `somador_1bit`, e entregar F[5..0]. Preservar o padrão da cadeia aproveitável e corrigir a conexão de B4 com F0. Somar 1 no estágio menos significativo e garantir que a propagação alcance todos os seis bits. Não aplicar conversão SM→C2 ao operando desse caminho, C2→SM ao resultado ou normalização do padrão -0. Gerar `Complemento_2.bsf` sem comentários explicativos, atualizar suas instâncias e cadastrar o BDF no QSF quando integrado.
+Completar 010 no próprio `Complemento_2.bdf`. Não criar `C2_B` ou outro esquema paralelo que substitua o arquivo recebido. Manter B[4..0] como entrada externa, montar B6={B4,B[4..0]} dentro do bloco, completar seis inversões e seis estágios reutilizando `somador_1bit`, e entregar o resultado bruto em F[5..0]. Preservar o padrão da cadeia aproveitável e corrigir a conexão de B4 com F0. Somar 1 no estágio menos significativo e garantir que a propagação alcance todos os seis bits. Não aplicar conversão SM→C2 ao operando desse caminho, C2→SM ao resultado ou normalização do padrão -0. Gerar `Complemento_2.bsf` sem comentários explicativos, atualizar suas instâncias e cadastrar o BDF no QSF quando integrado.
 
 Os demais blocos possíveis são `ADD_SUB_BIT`, `ADD_SUB6`, `SM_C2` e `C2_SM`, todos com BDF e BSF quando instanciados. Os conversores SM/C2 continuam úteis para soma e subtração, mas são funções distintas da operação 010. Esses nomes são uma proposta, não obrigação de renomear blocos bons.
 
@@ -147,4 +149,4 @@ A entrega fica concluída quando o projeto abre e compila no Quartus com o top i
 
 ## Resumo desta análise
 
-Li o guia e examinei os esquemas, símbolos, configuração e relatórios existentes. Incorporei `Complemento_2.bdf` exatamente como recebido e revisei o plano para corrigir e integrar esse bloco, sem criar um substituto paralelo. A leitura das conexões mostrou uma cadeia de apenas quatro bits e uma ligação suspeita de B4 com F0; não há extensão de B implementada. O cálculo em seis bits após extensão é a proposta atual, pendente de definir o bit acrescentado e o mapeamento em F. Os esquemas preexistentes, BSF, QSF e QPF não foram alterados, e o arquivo recebido ainda não foi corrigido nem compilado.
+Li o guia e examinei os esquemas, símbolos, configuração e relatórios existentes. Incorporei `Complemento_2.bdf` exatamente como recebido e revisei o plano para corrigir e integrar esse bloco, sem criar um substituto paralelo. A leitura das conexões mostrou uma cadeia de apenas quatro bits e uma ligação suspeita de B4 com F0; não há extensão de B implementada. O usuário confirmou o cálculo em seis bits após repetir B4 na extensão, com resultado bruto diretamente em F, e essa regra já está incorporada ao plano. Os esquemas preexistentes, BSF, QSF e QPF não foram alterados, e o arquivo recebido ainda não foi corrigido nem compilado.
