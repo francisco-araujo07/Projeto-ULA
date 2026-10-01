@@ -24,10 +24,11 @@
     "MUX8_6": 384,
     "CONTROLE": 64,
     "ULA": 8192,
-    "TOP_leds_displays": 8192
+    "TOP_leds_displays": 8192,
+    "TOP_unused_switches": 3968
   },
-  "total": 33521,
-  "seconds": 7.23,
+  "total": 37489,
+  "seconds": 8.35,
   "explicit_cases": [
     {
       "A": "01111",
@@ -182,7 +183,7 @@
     "decof7_unidade.bdf": "edca85de5db74c782f6d176946f291453d2497b617f19f240859d395a596f352",
     "ENABLE7.bdf": "7043c8c4bbf7eb20a1cdb544352505faf4665441a15c726a83b5907c7f5c0544",
     "Igual_5bits.bdf": "15c1fe66b98b3f515735dad01617fb8e91ecae614c60f88d74fd373a7573692a",
-    "LEDS_ULA.bdf": "a9be90c9aabd0f959f13557d9b95b04a32780382e8cde0a369b78d2736cfff23",
+    "LEDS_ULA.bdf": "6adb3824344889441a770c365df55d8f4e7f51753217333320f10b75d44bb219",
     "MAG_ENTRADA.bdf": "10d67fa57e1e4613240e2e1b9ab60618bcb5d47142fb23d740dfd8a12487c77d",
     "Maior_1bit.bdf": "974dbb446f1318abb375aa1769e8cee35216a8337dfdc1dce8434bfbe9c6445e",
     "Maior_4bits.bdf": "0fef4784add67369f5efd662410b099532fa684ea54770eb572e72704ef919e7",
@@ -195,7 +196,7 @@
     "somador_1bit.bdf": "70f3d1cc72f95b3cf310704b45150017e4cc37c2868598689611e2c9290088a2",
     "somador_5bit.bdf": "a72eb866f623e04f6938501bffbf6503922ab1ce47ab8ee764a43abc4b80388e",
     "Somador_5bits.bdf": "6180a9d34682c03f3b9029345f3c692597ca417015944a291a2fc6d6295adb1a",
-    "TOP.bdf": "4f2f0bc36deeaa111e589f1358c52bc47022eb91508ea0cf73c0e01c9ce3fbcd",
+    "TOP.bdf": "2896abb05936ab41db1325058ffba63b93e0eabcca4e031843d66d7f6ac2375a",
     "ULA.bdf": "05ebfeed0cfdaf2b36bbe59350329a6d59db668b05196ad2c0f5de48b2337d75",
     "Xor_5bits.bdf": "488961486249a489d5f609d2ec9d317f1e7df25a97b36f8801f7dc2df48588bb"
   }
