@@ -6,6 +6,8 @@
 !/output_files/integracao/
 /output_files/integracao/*
 !/output_files/integracao/projeto-ula.sof
+!/output_files/integracao/ULA_DE2_115_REMAPEADA.sof
+!/output_files/integracao/ULA_DE2_115_REMAPEADA.sof.sha256
 __pycache__/
 *.pyc
 
@@ -16,6 +18,7 @@ __pycache__/
 /verificacao/*.log
 /verificacao/resultados_testes.json
 /verificacao/hierarquia_interfaces.json
+/verificacao/regeneracao_sof.json
 
 # Task instructions and documentation live outside the implementation branch
 /PROMPT_AGENTE_ULA.md
