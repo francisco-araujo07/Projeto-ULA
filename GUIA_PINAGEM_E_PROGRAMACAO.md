@@ -26,6 +26,8 @@ Use **Processing → Start Compilation**. A compilação deve terminar sem erros
 
 `output_files/integracao/projeto-ula.sof`
 
+Para testar o binário publicado, baixe [ULA_DE2_115_REMAPEADA.sof](https://github.com/francisco-araujo07/Projeto-ULA/blob/feature/integracao-ula/output_files/integracao/ULA_DE2_115_REMAPEADA.sof). Ele é uma cópia do SOF regenerado em uma pasta nova, sem caches anteriores do Quartus. Use **Change File** no Programmer para selecionar explicitamente esse arquivo. Se recompilar o projeto localmente, use o `projeto-ula.sof` resultante da sua compilação.
+
 Ao recompilar, o Quartus gera os relatórios na mesma pasta do SOF. Os resultados da verificação publicada estão na branch `docs/relatorios-ula`.
 
 Há avisos esperados: HEX2/3 apagados e LEDs não usados têm saídas constantes; alguns segmentos das dezenas de A/B também são constantes porque suas magnitudes ficam em 0..15. SW3..7 não têm fan-out porque são ignoradas pela ULA. O projeto não define requisitos de tempo e não tem clock: os avisos de SDC ausente e de ausência de clocks não representam teste temporal aprovado. O Fitter também usa valores padrão de corrente e slew rate; não foram inventadas restrições do professor. O aviso de LogicLock decorre da configuração herdada em uma instalação Lite. Erros, entradas flutuantes, múltiplos drivers ou entidades ausentes devem ser resolvidos antes de programar.
@@ -37,7 +39,7 @@ Há avisos esperados: HEX2/3 apagados e LEDs não usados têm saídas constantes
 3. No Quartus, abra **Tools → Programmer**.
 4. Em **Hardware Setup**, selecione o cabo **USB-Blaster**. Se ele não aparecer, confira o cabo USB, a alimentação e o driver no Gerenciador de Dispositivos. O driver da instalação está em `C:/intelFPGA_lite/21.1/quartus/drivers/usb-blaster`.
 5. Selecione **Mode: JTAG** e use **Auto Detect**. Confira se aparece o dispositivo **EP4CE115**. Se houver outro dispositivo ou cadeia inesperada, verifique o alvo antes de continuar.
-6. Associe `output_files/integracao/projeto-ula.sof` ao EP4CE115, usando **Change File** ou **Add File**, conforme a lista apresentada. Evite duas entradas para o mesmo FPGA.
+6. Associe `output_files/integracao/projeto-ula.sof` ou o arquivo publicado `ULA_DE2_115_REMAPEADA.sof` ao EP4CE115, usando **Change File** ou **Add File**, conforme a lista apresentada. Evite duas entradas para o mesmo FPGA.
 7. Marque **Program/Configure** e clique **Start**. Aguarde **100% (Successful)**.
 
 Esse procedimento carrega a SRAM do FPGA: a configuração é perdida quando a placa é desligada. Este guia não cobre gravação permanente em memória de configuração. Nenhuma placa foi programada pelo agente.
@@ -111,3 +113,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File verificacao/executar_verific
 O script exporta novamente os BDF pelo Quartus, confere BDF/BSF e terminais das instâncias, compara as netlists combinacionais com um modelo independente e compila. Precisa do Python e do Quartus no caminho indicado; aceita `-Python` e `-QuartusBin` para outras instalações.
 
 As contagens e casos explícitos estão em `verificacao/resultados_testes.json`. O simulador Questa instalado recusou a licença; a verificação entregue interpreta as netlists estruturais, sem simulação de atrasos. A revisão visual no editor Quartus foi deixada para você por solicitação expressa.
+
+## 8. Conferir o download do SOF
+
+O SHA-256 do arquivo publicado está em [ULA_DE2_115_REMAPEADA.sof.sha256](https://github.com/francisco-araujo07/Projeto-ULA/blob/feature/integracao-ula/output_files/integracao/ULA_DE2_115_REMAPEADA.sof.sha256). No computador que fará a programação, rode na pasta do download:
+
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath .\ULA_DE2_115_REMAPEADA.sof
+```
+
+O hash deve coincidir com o arquivo `.sha256`. Esse SHA-256 verifica o download; o campo **Checksum** no Programmer usa outro formato. O registro da recompilação, com dispositivo, mapeamento, checksum do Programmer e hashes, está em `verificacao/regeneracao_sof.json` na branch de relatórios. Compilar e testar logicamente o SOF não confirma que a transferência JTAG foi concluída na placa.
