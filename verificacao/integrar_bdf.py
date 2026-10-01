@@ -255,14 +255,14 @@ def magnitude_input():
 
 def led_adapter():
     d=Diagram('LEDS_ULA')
-    for name,x,y,end in [('SW[12..0]',256,64,944),('F[5..0]',304,96,1552)]:
+    for name,x,y,end in [('SW[17..0]',256,64,944),('F[5..0]',304,96,1552)]:
         ip=d.pin(name,'input',192,y); d.wire(ip,(x,y),bus=True); d.rail(x,y,end,name)
     status=d.pin('STATUS','input',192,1584)
     for name,x,y,end in [('LEDR[17..0]',864,64,1168),('LEDG[8..0]',928,96,1776)]:
         op=d.pin(name,'output',1056,y); d.wire((x,y),op,bus=True); d.rail(x,y,end,name)
-    for i in range(13): d.map_bit(256,864,192+i*56,f'SW[{i}]',f'LEDR[{i}]',608)
-    for i in range(13,18):
-        z=d.inst('GND',f'unused_red{i}',608,960+(i-13)*40)['1']; d.tap(864,z,f'LEDR[{i}]')
+    for row,i in enumerate([0,1,2]+list(range(8,18))): d.map_bit(256,864,192+row*56,f'SW[{i}]',f'LEDR[{i}]',608)
+    for i in range(3,8):
+        z=d.inst('GND',f'unused_red{i}',608,960+(i-3)*40)['1']; d.tap(864,z,f'LEDR[{i}]')
     for i in range(6): d.map_bit(304,928,1248+i*56,f'F[{i}]',f'LEDG[{i}]',608)
     p=d.inst('WIRE','status_led',608,1568); d.wire(status,p['IN']); d.tap(928,p['OUT'],'LEDG[6]')
     for i in [7,8]:
@@ -270,25 +270,25 @@ def led_adapter():
     d.save()
 
 def top():
-    d=Diagram('TOP'); sw=d.pin('SW[12..0]','input',192,96); d.wire(sw,(256,96),bus=True); d.rail(256,96,1440,'SW[12..0]')
+    d=Diagram('TOP'); sw=d.pin('SW[17..0]','input',192,96); d.wire(sw,(256,96),bus=True); d.rail(256,96,1440,'SW[17..0]')
     u=d.inst('ULA','core',544,128)
-    for port,name in [('A[4..0]','SW[4..0]'),('B[4..0]','SW[9..5]'),('S[2..0]','SW[12..10]')]: d.wire((256,u[port][1]),u[port],name,True)
+    for port,name in [('A[4..0]','SW[17..13]'),('B[4..0]','SW[12..8]'),('S[2..0]','SW[2..0]')]: d.wire((256,u[port][1]),u[port],name,True)
     fp=u['F[5..0]']; d.wire(fp,(896,fp[1]),'F[5..0]',True); d.rail(896,fp[1],1504,'F[5..0]')
     # A/B pairs: one repeated magnitude-adapter function, then original decimal pair.
-    for i,(slice_,row) in enumerate([('SW[4..0]',448),('SW[9..5]',768)]):
+    for i,(slice_,row) in enumerate([('SW[17..13]',448),('SW[12..8]',768)]):
         m=d.inst('MAG_ENTRADA',f'magnitude_{i}',544,row); p=d.inst('decod_7seg_base',f'display_{i}',1104,row)
         d.wire((256,m['X[4..0]'][1]),m['X[4..0]'],slice_,True); d.wire(m['MAG[4..0]'],p['MAG[4..0]'],bus=True)
         v=d.inst('VCC',f'always_on_{i}',1008,p['EN'][1]-16)['1']; d.wire(v,p['EN'])
-        for out,idx in [('HEX_UNI[6..0]',4-2*i),('HEX_DEZ[6..0]',5-2*i)]: d.wire(p[out],d.pin(f'HEX{idx}[6..0]','output',1552,p[out][1]),bus=True)
+        for out,idx in [('HEX_UNI[6..0]',6-2*i),('HEX_DEZ[6..0]',7-2*i)]: d.wire(p[out],d.pin(f'HEX{idx}[6..0]','output',1552,p[out][1]),bus=True)
     p=d.inst('decod_7seg_base','display_result',1104,1088); d.wire((896,p['MAG[4..0]'][1]),p['MAG[4..0]'],'F[4..0]',True)
     en=u['ENF']; dest=p['EN']; d.route([en,(960,en[1]),(960,dest[1]),dest])
     for out,idx in [('HEX_UNI[6..0]',0),('HEX_DEZ[6..0]',1)]: d.wire(p[out],d.pin(f'HEX{idx}[6..0]','output',1552,p[out][1]),bus=True)
-    led=d.inst('LEDS_ULA','leds',1104,1376); d.wire((256,led['SW[12..0]'][1]),led['SW[12..0]'],bus=True)
+    led=d.inst('LEDS_ULA','leds',1104,1376); d.wire((256,led['SW[17..0]'][1]),led['SW[17..0]'],bus=True)
     d.wire((896,led['F[5..0]'][1]),led['F[5..0]'],bus=True)
     src=u['STATUS']; dest=led['STATUS']; d.route([src,(992,src[1]),(992,1488),(480,1488),(480,dest[1]),dest])
     for out in ['LEDR[17..0]','LEDG[8..0]']: d.wire(led[out],d.pin(out,'output',1552,led[out][1]),bus=True)
-    for idx in [6,7]:
-        y=1664+(idx-6)*416; d.rail(1376,y,y+336,f'HEX{idx}[6..0]'); d.wire((1376,y),d.pin(f'HEX{idx}[6..0]','output',1552,y),bus=True)
+    for idx in [2,3]:
+        y=1664+(idx-2)*416; d.rail(1376,y,y+336,f'HEX{idx}[6..0]'); d.wire((1376,y),d.pin(f'HEX{idx}[6..0]','output',1552,y),bus=True)
         for i in range(7):
             v=d.inst('VCC',f'off_hex{idx}_{i}',1248,y+64+i*40-16)['1']; d.tap(1376,v,f'HEX{idx}[{i}]')
     d.save()

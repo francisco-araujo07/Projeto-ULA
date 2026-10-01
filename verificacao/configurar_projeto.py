@@ -3,7 +3,7 @@ from pathlib import Path
 import re,csv
 ROOT=Path(__file__).resolve().parent.parent
 groups={
- 'SW': 'AB28 AC28 AC27 AD27 AB27 AC26 AD26 AB26 AC25 AB25 AC24 AB24 AB23',
+ 'SW': 'AB28 AC28 AC27 AD27 AB27 AC26 AD26 AB26 AC25 AB25 AC24 AB24 AB23 AA24 AA23 AA22 Y24 Y23',
  'LEDR':'G19 F19 E19 F21 F18 E18 J19 H19 J17 G17 J15 H16 J16 H17 F15 G15 G16 H15',
  'LEDG':'E21 E22 E25 E24 H21 G20 G22 G21 F17',
  'HEX0':'G18 F22 E17 L26 L25 J22 H22',
@@ -15,7 +15,7 @@ groups={
  'HEX6':'AA17 AB16 AA16 AB17 AB15 AA15 AC17',
  'HEX7':'AD17 AE17 AG17 AH17 AF17 AG18 AA14',
 }
-url='https://www.terasic.com.tw/wiki/images/f/ff/DE2_115_User_manual_2013.pdf'
+url='https://drive.google.com/file/d/1oxiqKtVPTX-NDUOqMl7d9wLqDDCVz0Y6/view'
 rows=[]
 for group,pins in groups.items():
     for bit,pin in enumerate(pins.split()):
@@ -35,7 +35,7 @@ for f in sorted(ROOT.glob('*.bdf')): s+=f'set_global_assignment -name BDF_FILE {
 for r in rows:
     s+=f'set_location_assignment {r["pin"]} -to {r["signal"]}\nset_instance_assignment -name IO_STANDARD "{r["io_standard"]}" -to {r["signal"]}\n'
 qsf.write_text(s)
-assert len({r['pin'] for r in rows})==len(rows)==96
+assert len({r['pin'] for r in rows})==len(rows)==101
 # Preserve VWF stimuli; use separate projects whose tops match their signal names.
 for mux in ['MUX1','MUX2_6','MUX8_6']:
     folder=ROOT/'verificacao/vwf'/mux; folder.mkdir(parents=True,exist_ok=True)
@@ -48,4 +48,4 @@ for mux in ['MUX1','MUX2_6','MUX8_6']:
     s=s.replace(f' {mux} -c {mux}',f' "{(folder/mux).as_posix()}" -c {mux}')
     s=s.replace(ROOT.as_posix()+'/simulation/qsim/',folder.as_posix()+'/simulation/qsim/')
     vf.write_text(s)
-print('TOP configured; 96 physical ports assigned; VWF stimuli preserved.')
+print('TOP configured; 101 physical ports assigned; VWF stimuli preserved.')

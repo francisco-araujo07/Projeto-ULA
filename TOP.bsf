@@ -37,13 +37,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 0 32)
     (input)
-    (text "SW[12..0]"
+    (text "SW[17..0]"
       (rect 0 0 63 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "SW[12..0]"
+    (text "SW[17..0]"
       (rect 22 24 85 40)
       (font "Arial"
         (font_size 8)
@@ -58,13 +58,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 224 32)
     (output)
-    (text "HEX4[6..0]"
+    (text "HEX6[6..0]"
       (rect 0 0 70 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "HEX4[6..0]"
+    (text "HEX6[6..0]"
       (rect 132 24 202 40)
       (font "Arial"
         (font_size 8)
@@ -79,13 +79,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 224 64)
     (output)
-    (text "HEX5[6..0]"
+    (text "HEX7[6..0]"
       (rect 0 0 70 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "HEX5[6..0]"
+    (text "HEX7[6..0]"
       (rect 132 56 202 72)
       (font "Arial"
         (font_size 8)
@@ -100,13 +100,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 224 96)
     (output)
-    (text "HEX2[6..0]"
+    (text "HEX4[6..0]"
       (rect 0 0 70 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "HEX2[6..0]"
+    (text "HEX4[6..0]"
       (rect 132 88 202 104)
       (font "Arial"
         (font_size 8)
@@ -121,13 +121,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 224 128)
     (output)
-    (text "HEX3[6..0]"
+    (text "HEX5[6..0]"
       (rect 0 0 70 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "HEX3[6..0]"
+    (text "HEX5[6..0]"
       (rect 132 120 202 136)
       (font "Arial"
         (font_size 8)
@@ -226,13 +226,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 224 288)
     (output)
-    (text "HEX6[6..0]"
+    (text "HEX2[6..0]"
       (rect 0 0 70 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "HEX6[6..0]"
+    (text "HEX2[6..0]"
       (rect 132 280 202 296)
       (font "Arial"
         (font_size 8)
@@ -247,13 +247,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 224 320)
     (output)
-    (text "HEX7[6..0]"
+    (text "HEX3[6..0]"
       (rect 0 0 70 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "HEX7[6..0]"
+    (text "HEX3[6..0]"
       (rect 132 312 202 328)
       (font "Arial"
         (font_size 8)

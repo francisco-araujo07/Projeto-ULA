@@ -29,7 +29,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "SW[12..0]"
+  (text "SW[17..0]"
     (rect 5 0 68 16)
     (font "Arial")
   )
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
   (bus)
 )
 (connector
-  (text "SW[12..0]"
+  (text "SW[17..0]"
     (rect 264 78 327 94)
     (font "Arial"
       (font_size 7)
@@ -228,8 +228,8 @@ https://fpgasoftware.intel.com/eula.
   )
 )
 (connector
-  (text "SW[4..0]"
-    (rect 264 142 320 158)
+  (text "SW[17..13]"
+    (rect 264 142 334 158)
     (font "Arial"
       (font_size 7)
     )
@@ -239,8 +239,8 @@ https://fpgasoftware.intel.com/eula.
   (bus)
 )
 (connector
-  (text "SW[9..5]"
-    (rect 264 174 320 190)
+  (text "SW[12..8]"
+    (rect 264 174 327 190)
     (font "Arial"
       (font_size 7)
     )
@@ -250,8 +250,8 @@ https://fpgasoftware.intel.com/eula.
   (bus)
 )
 (connector
-  (text "SW[12..10]"
-    (rect 264 206 334 222)
+  (text "SW[2..0]"
+    (rect 264 206 320 222)
     (font "Arial"
       (font_size 7)
     )
@@ -448,8 +448,8 @@ https://fpgasoftware.intel.com/eula.
   )
 )
 (connector
-  (text "SW[4..0]"
-    (rect 264 462 320 478)
+  (text "SW[17..13]"
+    (rect 264 462 334 478)
     (font "Arial"
       (font_size 7)
     )
@@ -522,7 +522,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "HEX4[6..0]"
+  (text "HEX6[6..0]"
     (rect 90 0 160 16)
     (font "Intel Clear")
   )
@@ -572,7 +572,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "HEX5[6..0]"
+  (text "HEX7[6..0]"
     (rect 90 0 160 16)
     (font "Intel Clear")
   )
@@ -779,8 +779,8 @@ https://fpgasoftware.intel.com/eula.
   )
 )
 (connector
-  (text "SW[9..5]"
-    (rect 264 782 320 798)
+  (text "SW[12..8]"
+    (rect 264 782 327 798)
     (font "Arial"
       (font_size 7)
     )
@@ -853,7 +853,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "HEX2[6..0]"
+  (text "HEX4[6..0]"
     (rect 90 0 160 16)
     (font "Intel Clear")
   )
@@ -903,7 +903,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "HEX3[6..0]"
+  (text "HEX5[6..0]"
     (rect 90 0 160 16)
     (font "Intel Clear")
   )
@@ -1187,13 +1187,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 0 32)
     (input)
-    (text "SW[12..0]"
+    (text "SW[17..0]"
       (rect 0 0 63 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "SW[12..0]"
+    (text "SW[17..0]"
       (rect 22 24 85 40)
       (font "Arial"
         (font_size 8)
@@ -1425,7 +1425,7 @@ https://fpgasoftware.intel.com/eula.
   (bus)
 )
 (connector
-  (text "HEX6[6..0]"
+  (text "HEX2[6..0]"
     (rect 1384 1646 1454 1662)
     (font "Arial"
       (font_size 7)
@@ -1444,7 +1444,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "HEX6[6..0]"
+  (text "HEX2[6..0]"
     (rect 90 0 160 16)
     (font "Intel Clear")
   )
@@ -1494,7 +1494,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_0"
+  (text "off_hex2_0"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1532,7 +1532,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[0]"
+  (text "HEX2[0]"
     (rect 1311 1710 1360 1726)
     (font "Arial"
       (font_size 7)
@@ -1550,7 +1550,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_1"
+  (text "off_hex2_1"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1588,7 +1588,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[1]"
+  (text "HEX2[1]"
     (rect 1311 1750 1360 1766)
     (font "Arial"
       (font_size 7)
@@ -1606,7 +1606,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_2"
+  (text "off_hex2_2"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1644,7 +1644,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[2]"
+  (text "HEX2[2]"
     (rect 1311 1790 1360 1806)
     (font "Arial"
       (font_size 7)
@@ -1662,7 +1662,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_3"
+  (text "off_hex2_3"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1700,7 +1700,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[3]"
+  (text "HEX2[3]"
     (rect 1311 1830 1360 1846)
     (font "Arial"
       (font_size 7)
@@ -1718,7 +1718,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_4"
+  (text "off_hex2_4"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1756,7 +1756,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[4]"
+  (text "HEX2[4]"
     (rect 1311 1870 1360 1886)
     (font "Arial"
       (font_size 7)
@@ -1774,7 +1774,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_5"
+  (text "off_hex2_5"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1812,7 +1812,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[5]"
+  (text "HEX2[5]"
     (rect 1311 1910 1360 1926)
     (font "Arial"
       (font_size 7)
@@ -1830,7 +1830,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex6_6"
+  (text "off_hex2_6"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1868,7 +1868,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX6[6]"
+  (text "HEX2[6]"
     (rect 1311 1950 1360 1966)
     (font "Arial"
       (font_size 7)
@@ -1878,7 +1878,7 @@ https://fpgasoftware.intel.com/eula.
   (pt 1264 1968)
 )
 (connector
-  (text "HEX7[6..0]"
+  (text "HEX3[6..0]"
     (rect 1384 2062 1454 2078)
     (font "Arial"
       (font_size 7)
@@ -1897,7 +1897,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "HEX7[6..0]"
+  (text "HEX3[6..0]"
     (rect 90 0 160 16)
     (font "Intel Clear")
   )
@@ -1947,7 +1947,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_0"
+  (text "off_hex3_0"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -1985,7 +1985,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[0]"
+  (text "HEX3[0]"
     (rect 1311 2126 1360 2142)
     (font "Arial"
       (font_size 7)
@@ -2003,7 +2003,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_1"
+  (text "off_hex3_1"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -2041,7 +2041,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[1]"
+  (text "HEX3[1]"
     (rect 1311 2166 1360 2182)
     (font "Arial"
       (font_size 7)
@@ -2059,7 +2059,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_2"
+  (text "off_hex3_2"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -2097,7 +2097,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[2]"
+  (text "HEX3[2]"
     (rect 1311 2206 1360 2222)
     (font "Arial"
       (font_size 7)
@@ -2115,7 +2115,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_3"
+  (text "off_hex3_3"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -2153,7 +2153,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[3]"
+  (text "HEX3[3]"
     (rect 1311 2246 1360 2262)
     (font "Arial"
       (font_size 7)
@@ -2171,7 +2171,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_4"
+  (text "off_hex3_4"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -2209,7 +2209,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[4]"
+  (text "HEX3[4]"
     (rect 1311 2286 1360 2302)
     (font "Arial"
       (font_size 7)
@@ -2227,7 +2227,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_5"
+  (text "off_hex3_5"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -2265,7 +2265,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[5]"
+  (text "HEX3[5]"
     (rect 1311 2326 1360 2342)
     (font "Arial"
       (font_size 7)
@@ -2283,7 +2283,7 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "off_hex7_6"
+  (text "off_hex3_6"
     (rect 16 24 86 40)
     (font "Intel Clear")
     (vertical)
@@ -2321,7 +2321,7 @@ https://fpgasoftware.intel.com/eula.
   (rotate90)
 )
 (connector
-  (text "HEX7[6]"
+  (text "HEX3[6]"
     (rect 1311 2366 1360 2382)
     (font "Arial"
       (font_size 7)

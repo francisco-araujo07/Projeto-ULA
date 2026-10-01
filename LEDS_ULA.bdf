@@ -29,7 +29,7 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "SW[12..0]"
+  (text "SW[17..0]"
     (rect 5 0 68 16)
     (font "Arial")
   )
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
   (bus)
 )
 (connector
-  (text "SW[12..0]"
+  (text "SW[17..0]"
     (rect 264 46 327 62)
     (font "Arial"
       (font_size 7)
@@ -620,501 +620,6 @@ https://fpgasoftware.intel.com/eula.
       (font_size 6)
     )
   )
-  (text "map_LEDR_3"
-    (rect 16 24 86 40)
-    (font "Arial"
-      (font_size 7)
-    )
-    (invisible)
-  )
-  (port
-    (pt 0 16)
-    (input)
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 0 16)
-      (pt 14 16)
-      (line_width 1)
-    )
-  )
-  (port
-    (pt 48 16)
-    (output)
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 32 16)
-      (pt 48 16)
-      (line_width 1)
-    )
-  )
-  (drawing
-    (line
-      (pt 14 7)
-      (pt 32 16)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 14 7)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 32 16)
-      (line_width 1)
-    )
-  )
-)
-(connector
-  (text "SW[3]"
-    (rect 264 342 299 358)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 256 360)
-  (pt 608 360)
-)
-(connector
-  (text "LEDR[3]"
-    (rect 799 342 848 358)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 864 360)
-  (pt 656 360)
-)
-(symbol
-  (rect 608 400 656 432)
-  (text "WIRE"
-    (rect 1 0 22 9)
-    (font "Arial"
-      (font_size 6)
-    )
-  )
-  (text "map_LEDR_4"
-    (rect 16 24 86 40)
-    (font "Arial"
-      (font_size 7)
-    )
-    (invisible)
-  )
-  (port
-    (pt 0 16)
-    (input)
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 0 16)
-      (pt 14 16)
-      (line_width 1)
-    )
-  )
-  (port
-    (pt 48 16)
-    (output)
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 32 16)
-      (pt 48 16)
-      (line_width 1)
-    )
-  )
-  (drawing
-    (line
-      (pt 14 7)
-      (pt 32 16)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 14 7)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 32 16)
-      (line_width 1)
-    )
-  )
-)
-(connector
-  (text "SW[4]"
-    (rect 264 398 299 414)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 256 416)
-  (pt 608 416)
-)
-(connector
-  (text "LEDR[4]"
-    (rect 799 398 848 414)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 864 416)
-  (pt 656 416)
-)
-(symbol
-  (rect 608 456 656 488)
-  (text "WIRE"
-    (rect 1 0 22 9)
-    (font "Arial"
-      (font_size 6)
-    )
-  )
-  (text "map_LEDR_5"
-    (rect 16 24 86 40)
-    (font "Arial"
-      (font_size 7)
-    )
-    (invisible)
-  )
-  (port
-    (pt 0 16)
-    (input)
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 0 16)
-      (pt 14 16)
-      (line_width 1)
-    )
-  )
-  (port
-    (pt 48 16)
-    (output)
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 32 16)
-      (pt 48 16)
-      (line_width 1)
-    )
-  )
-  (drawing
-    (line
-      (pt 14 7)
-      (pt 32 16)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 14 7)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 32 16)
-      (line_width 1)
-    )
-  )
-)
-(connector
-  (text "SW[5]"
-    (rect 264 454 299 470)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 256 472)
-  (pt 608 472)
-)
-(connector
-  (text "LEDR[5]"
-    (rect 799 454 848 470)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 864 472)
-  (pt 656 472)
-)
-(symbol
-  (rect 608 512 656 544)
-  (text "WIRE"
-    (rect 1 0 22 9)
-    (font "Arial"
-      (font_size 6)
-    )
-  )
-  (text "map_LEDR_6"
-    (rect 16 24 86 40)
-    (font "Arial"
-      (font_size 7)
-    )
-    (invisible)
-  )
-  (port
-    (pt 0 16)
-    (input)
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 0 16)
-      (pt 14 16)
-      (line_width 1)
-    )
-  )
-  (port
-    (pt 48 16)
-    (output)
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 32 16)
-      (pt 48 16)
-      (line_width 1)
-    )
-  )
-  (drawing
-    (line
-      (pt 14 7)
-      (pt 32 16)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 14 7)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 32 16)
-      (line_width 1)
-    )
-  )
-)
-(connector
-  (text "SW[6]"
-    (rect 264 510 299 526)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 256 528)
-  (pt 608 528)
-)
-(connector
-  (text "LEDR[6]"
-    (rect 799 510 848 526)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 864 528)
-  (pt 656 528)
-)
-(symbol
-  (rect 608 568 656 600)
-  (text "WIRE"
-    (rect 1 0 22 9)
-    (font "Arial"
-      (font_size 6)
-    )
-  )
-  (text "map_LEDR_7"
-    (rect 16 24 86 40)
-    (font "Arial"
-      (font_size 7)
-    )
-    (invisible)
-  )
-  (port
-    (pt 0 16)
-    (input)
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "IN"
-      (rect 2 7 12 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 0 16)
-      (pt 14 16)
-      (line_width 1)
-    )
-  )
-  (port
-    (pt 48 16)
-    (output)
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (text "OUT"
-      (rect 32 7 47 19)
-      (font "Courier New"
-        (bold)
-      )
-      (invisible)
-    )
-    (line
-      (pt 32 16)
-      (pt 48 16)
-      (line_width 1)
-    )
-  )
-  (drawing
-    (line
-      (pt 14 7)
-      (pt 32 16)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 14 7)
-      (line_width 1)
-    )
-    (line
-      (pt 14 25)
-      (pt 32 16)
-      (line_width 1)
-    )
-  )
-)
-(connector
-  (text "SW[7]"
-    (rect 264 566 299 582)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 256 584)
-  (pt 608 584)
-)
-(connector
-  (text "LEDR[7]"
-    (rect 799 566 848 582)
-    (font "Arial"
-      (font_size 7)
-    )
-  )
-  (pt 864 584)
-  (pt 656 584)
-)
-(symbol
-  (rect 608 624 656 656)
-  (text "WIRE"
-    (rect 1 0 22 9)
-    (font "Arial"
-      (font_size 6)
-    )
-  )
   (text "map_LEDR_8"
     (rect 16 24 86 40)
     (font "Arial"
@@ -1188,26 +693,26 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
   (text "SW[8]"
-    (rect 264 622 299 638)
+    (rect 264 342 299 358)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 256 640)
-  (pt 608 640)
+  (pt 256 360)
+  (pt 608 360)
 )
 (connector
   (text "LEDR[8]"
-    (rect 799 622 848 638)
+    (rect 799 342 848 358)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 864 640)
-  (pt 656 640)
+  (pt 864 360)
+  (pt 656 360)
 )
 (symbol
-  (rect 608 680 656 712)
+  (rect 608 400 656 432)
   (text "WIRE"
     (rect 1 0 22 9)
     (font "Arial"
@@ -1287,26 +792,26 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
   (text "SW[9]"
-    (rect 264 678 299 694)
+    (rect 264 398 299 414)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 256 696)
-  (pt 608 696)
+  (pt 256 416)
+  (pt 608 416)
 )
 (connector
   (text "LEDR[9]"
-    (rect 799 678 848 694)
+    (rect 799 398 848 414)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 864 696)
-  (pt 656 696)
+  (pt 864 416)
+  (pt 656 416)
 )
 (symbol
-  (rect 608 736 656 768)
+  (rect 608 456 656 488)
   (text "WIRE"
     (rect 1 0 22 9)
     (font "Arial"
@@ -1386,26 +891,26 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
   (text "SW[10]"
-    (rect 264 734 306 750)
+    (rect 264 454 306 470)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 256 752)
-  (pt 608 752)
+  (pt 256 472)
+  (pt 608 472)
 )
 (connector
   (text "LEDR[10]"
-    (rect 792 734 848 750)
+    (rect 792 454 848 470)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 864 752)
-  (pt 656 752)
+  (pt 864 472)
+  (pt 656 472)
 )
 (symbol
-  (rect 608 792 656 824)
+  (rect 608 512 656 544)
   (text "WIRE"
     (rect 1 0 22 9)
     (font "Arial"
@@ -1485,26 +990,26 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
   (text "SW[11]"
-    (rect 264 790 306 806)
+    (rect 264 510 306 526)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 256 808)
-  (pt 608 808)
+  (pt 256 528)
+  (pt 608 528)
 )
 (connector
   (text "LEDR[11]"
-    (rect 792 790 848 806)
+    (rect 792 510 848 526)
     (font "Arial"
       (font_size 7)
     )
   )
-  (pt 864 808)
-  (pt 656 808)
+  (pt 864 528)
+  (pt 656 528)
 )
 (symbol
-  (rect 608 848 656 880)
+  (rect 608 568 656 600)
   (text "WIRE"
     (rect 1 0 22 9)
     (font "Arial"
@@ -1584,6 +1089,501 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
   (text "SW[12]"
+    (rect 264 566 306 582)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 584)
+  (pt 608 584)
+)
+(connector
+  (text "LEDR[12]"
+    (rect 792 566 848 582)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 584)
+  (pt 656 584)
+)
+(symbol
+  (rect 608 624 656 656)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_13"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[13]"
+    (rect 264 622 306 638)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 640)
+  (pt 608 640)
+)
+(connector
+  (text "LEDR[13]"
+    (rect 792 622 848 638)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 640)
+  (pt 656 640)
+)
+(symbol
+  (rect 608 680 656 712)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_14"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[14]"
+    (rect 264 678 306 694)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 696)
+  (pt 608 696)
+)
+(connector
+  (text "LEDR[14]"
+    (rect 792 678 848 694)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 696)
+  (pt 656 696)
+)
+(symbol
+  (rect 608 736 656 768)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_15"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[15]"
+    (rect 264 734 306 750)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 752)
+  (pt 608 752)
+)
+(connector
+  (text "LEDR[15]"
+    (rect 792 734 848 750)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 752)
+  (pt 656 752)
+)
+(symbol
+  (rect 608 792 656 824)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_16"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[16]"
+    (rect 264 790 306 806)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 808)
+  (pt 608 808)
+)
+(connector
+  (text "LEDR[16]"
+    (rect 792 790 848 806)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 808)
+  (pt 656 808)
+)
+(symbol
+  (rect 608 848 656 880)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_17"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[17]"
     (rect 264 846 306 862)
     (font "Arial"
       (font_size 7)
@@ -1593,7 +1593,7 @@ https://fpgasoftware.intel.com/eula.
   (pt 608 864)
 )
 (connector
-  (text "LEDR[12]"
+  (text "LEDR[17]"
     (rect 792 846 848 862)
     (font "Arial"
       (font_size 7)
@@ -1611,8 +1611,8 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "unused_red13"
-    (rect 16 24 100 40)
+  (text "unused_red3"
+    (rect 16 24 93 40)
     (font "Intel Clear")
     (vertical)
     (invisible)
@@ -1657,8 +1657,8 @@ https://fpgasoftware.intel.com/eula.
   (rotate270)
 )
 (connector
-  (text "LEDR[13]"
-    (rect 792 958 848 974)
+  (text "LEDR[3]"
+    (rect 799 958 848 974)
     (font "Arial"
       (font_size 7)
     )
@@ -1675,8 +1675,8 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "unused_red14"
-    (rect 16 24 100 40)
+  (text "unused_red4"
+    (rect 16 24 93 40)
     (font "Intel Clear")
     (vertical)
     (invisible)
@@ -1721,8 +1721,8 @@ https://fpgasoftware.intel.com/eula.
   (rotate270)
 )
 (connector
-  (text "LEDR[14]"
-    (rect 792 998 848 1014)
+  (text "LEDR[4]"
+    (rect 799 998 848 1014)
     (font "Arial"
       (font_size 7)
     )
@@ -1739,8 +1739,8 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "unused_red15"
-    (rect 16 24 100 40)
+  (text "unused_red5"
+    (rect 16 24 93 40)
     (font "Intel Clear")
     (vertical)
     (invisible)
@@ -1785,8 +1785,8 @@ https://fpgasoftware.intel.com/eula.
   (rotate270)
 )
 (connector
-  (text "LEDR[15]"
-    (rect 792 1038 848 1054)
+  (text "LEDR[5]"
+    (rect 799 1038 848 1054)
     (font "Arial"
       (font_size 7)
     )
@@ -1803,8 +1803,8 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "unused_red16"
-    (rect 16 24 100 40)
+  (text "unused_red6"
+    (rect 16 24 93 40)
     (font "Intel Clear")
     (vertical)
     (invisible)
@@ -1849,8 +1849,8 @@ https://fpgasoftware.intel.com/eula.
   (rotate270)
 )
 (connector
-  (text "LEDR[16]"
-    (rect 792 1078 848 1094)
+  (text "LEDR[6]"
+    (rect 799 1078 848 1094)
     (font "Arial"
       (font_size 7)
     )
@@ -1867,8 +1867,8 @@ https://fpgasoftware.intel.com/eula.
     )
     (vertical)
   )
-  (text "unused_red17"
-    (rect 16 24 100 40)
+  (text "unused_red7"
+    (rect 16 24 93 40)
     (font "Intel Clear")
     (vertical)
     (invisible)
@@ -1913,8 +1913,8 @@ https://fpgasoftware.intel.com/eula.
   (rotate270)
 )
 (connector
-  (text "LEDR[17]"
-    (rect 792 1118 848 1134)
+  (text "LEDR[7]"
+    (rect 799 1118 848 1134)
     (font "Arial"
       (font_size 7)
     )

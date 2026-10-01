@@ -76,9 +76,12 @@ def main():
         for b in range(32):
             for s in range(8):
                 e=expected(a,b,s); check('ULA','ULA',dict(A=a,B=b,S=s),e)
-                sw=a|(b<<5)|(s<<10); f=e['F']; mag=f&31
-                top=dict(LEDR=sw,LEDG=f|(e['STATUS']<<6),HEX4=SEG[(a&15)%10],HEX5=SEG[(a&15)//10],HEX2=SEG[(b&15)%10],HEX3=SEG[(b&15)//10],HEX0=SEG[mag%10] if e['ENF'] else 127,HEX1=SEG[mag//10] if e['ENF'] else 127,HEX6=127,HEX7=127)
+                sw=(a<<13)|(b<<8)|s; f=e['F']; mag=f&31
+                top=dict(LEDR=sw,LEDG=f|(e['STATUS']<<6),HEX6=SEG[(a&15)%10],HEX7=SEG[(a&15)//10],HEX4=SEG[(b&15)%10],HEX5=SEG[(b&15)//10],HEX0=SEG[mag%10] if e['ENF'] else 127,HEX1=SEG[mag//10] if e['ENF'] else 127,HEX2=127,HEX3=127)
                 check('TOP_leds_displays','TOP',dict(SW=sw),top)
+                if a in (0,15,16,31) and b in (0,15,16,31):
+                    for unused in range(1,32):
+                        check('TOP_unused_switches','TOP',dict(SW=sw|(unused<<3)),top)
     explicit=[]
     for a,b,s in [(15,15,0),(31,31,0),(3,20,0),(19,4,1),(3,20,1),(16,0,3),(19,20,4),(20,19,5),(19,21,6),(19,21,7)]+[(0,b,2) for b in [0,1,3,15,16,19,31]]:
         r=c.run('ULA',A=a,B=b,S=s); assert r==expected(a,b,s); explicit.append(dict(A=f'{a:05b}',B=f'{b:05b}',S=f'{s:03b}',F=f'{r["F"]:06b}',STATUS=r['STATUS'],ENF=r['ENF']))

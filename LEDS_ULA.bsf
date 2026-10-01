@@ -37,13 +37,13 @@ https://fpgasoftware.intel.com/eula.
   (port
     (pt 0 32)
     (input)
-    (text "SW[12..0]"
+    (text "SW[17..0]"
       (rect 0 0 63 16)
       (font "Arial"
         (font_size 8)
       )
     )
-    (text "SW[12..0]"
+    (text "SW[17..0]"
       (rect 22 24 85 40)
       (font "Arial"
         (font_size 8)
