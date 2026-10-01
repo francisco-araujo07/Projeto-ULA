@@ -1,0 +1,25 @@
+# Quartus and simulation caches
+/db/
+/incremental_db/
+/simulation/qsim/
+/output_files/*
+!/output_files/integracao/
+/output_files/integracao/*
+!/output_files/integracao/projeto-ula.sof
+__pycache__/
+*.pyc
+
+# Locally generated verification output
+/verificacao/netlist/
+/verificacao/netlist_original/
+/verificacao/desenhos/
+/verificacao/*.log
+/verificacao/resultados_testes.json
+/verificacao/hierarquia_interfaces.json
+
+# Task instructions and documentation live outside the implementation branch
+/PROMPT_AGENTE_ULA.md
+/PLANO_INTEGRACAO_ULA.md
+/RELATORIO_INTEGRACAO_ULA.md
+/GUIA_PINAGEM_E_PROGRAMACAO.md
+/Guia_Visual_ULA_Montagem_Manual.pdf

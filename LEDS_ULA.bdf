@@ -1,0 +1,2877 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+  (input)
+  (rect 24 56 192 72)
+  (text "INPUT"
+    (rect 125 0 153 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "SW[12..0]"
+    (rect 5 0 68 16)
+    (font "Arial")
+  )
+  (pt 168 8)
+  (drawing
+    (line
+      (pt 84 12)
+      (pt 109 12)
+    )
+    (line
+      (pt 84 4)
+      (pt 109 4)
+    )
+    (line
+      (pt 113 8)
+      (pt 168 8)
+    )
+    (line
+      (pt 84 12)
+      (pt 84 4)
+    )
+    (line
+      (pt 109 4)
+      (pt 113 8)
+    )
+    (line
+      (pt 109 12)
+      (pt 113 8)
+    )
+  )
+  (text "VCC"
+    (rect 128 7 148 17)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+)
+(connector
+  (pt 192 64)
+  (pt 256 64)
+  (bus)
+)
+(connector
+  (text "SW[12..0]"
+    (rect 264 46 327 62)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 64)
+  (pt 256 944)
+  (bus)
+)
+(pin
+  (input)
+  (rect 24 88 192 104)
+  (text "INPUT"
+    (rect 125 0 153 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "F[5..0]"
+    (rect 5 0 54 16)
+    (font "Arial")
+  )
+  (pt 168 8)
+  (drawing
+    (line
+      (pt 84 12)
+      (pt 109 12)
+    )
+    (line
+      (pt 84 4)
+      (pt 109 4)
+    )
+    (line
+      (pt 113 8)
+      (pt 168 8)
+    )
+    (line
+      (pt 84 12)
+      (pt 84 4)
+    )
+    (line
+      (pt 109 4)
+      (pt 113 8)
+    )
+    (line
+      (pt 109 12)
+      (pt 113 8)
+    )
+  )
+  (text "VCC"
+    (rect 128 7 148 17)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+)
+(connector
+  (pt 192 96)
+  (pt 304 96)
+  (bus)
+)
+(connector
+  (text "F[5..0]"
+    (rect 312 78 361 94)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 96)
+  (pt 304 1552)
+  (bus)
+)
+(pin
+  (input)
+  (rect 24 1576 192 1592)
+  (text "INPUT"
+    (rect 125 0 153 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "STATUS"
+    (rect 5 0 47 16)
+    (font "Arial")
+  )
+  (pt 168 8)
+  (drawing
+    (line
+      (pt 84 12)
+      (pt 109 12)
+    )
+    (line
+      (pt 84 4)
+      (pt 109 4)
+    )
+    (line
+      (pt 113 8)
+      (pt 168 8)
+    )
+    (line
+      (pt 84 12)
+      (pt 84 4)
+    )
+    (line
+      (pt 109 4)
+      (pt 113 8)
+    )
+    (line
+      (pt 109 12)
+      (pt 113 8)
+    )
+  )
+  (text "VCC"
+    (rect 128 7 148 17)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+)
+(pin
+  (output)
+  (rect 1056 56 1232 72)
+  (text "OUTPUT"
+    (rect 1 0 39 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "LEDR[17..0]"
+    (rect 90 0 167 16)
+    (font "Intel Clear")
+  )
+  (pt 0 8)
+  (drawing
+    (line
+      (pt 0 8)
+      (pt 52 8)
+    )
+    (line
+      (pt 52 4)
+      (pt 78 4)
+    )
+    (line
+      (pt 52 12)
+      (pt 78 12)
+    )
+    (line
+      (pt 52 12)
+      (pt 52 4)
+    )
+    (line
+      (pt 78 4)
+      (pt 82 8)
+    )
+    (line
+      (pt 82 8)
+      (pt 78 12)
+    )
+    (line
+      (pt 78 12)
+      (pt 82 8)
+    )
+  )
+)
+(connector
+  (pt 864 64)
+  (pt 1056 64)
+  (bus)
+)
+(connector
+  (text "LEDR[17..0]"
+    (rect 872 46 949 62)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 64)
+  (pt 864 1168)
+  (bus)
+)
+(pin
+  (output)
+  (rect 1056 88 1232 104)
+  (text "OUTPUT"
+    (rect 1 0 39 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "LEDG[8..0]"
+    (rect 90 0 160 16)
+    (font "Intel Clear")
+  )
+  (pt 0 8)
+  (drawing
+    (line
+      (pt 0 8)
+      (pt 52 8)
+    )
+    (line
+      (pt 52 4)
+      (pt 78 4)
+    )
+    (line
+      (pt 52 12)
+      (pt 78 12)
+    )
+    (line
+      (pt 52 12)
+      (pt 52 4)
+    )
+    (line
+      (pt 78 4)
+      (pt 82 8)
+    )
+    (line
+      (pt 82 8)
+      (pt 78 12)
+    )
+    (line
+      (pt 78 12)
+      (pt 82 8)
+    )
+  )
+)
+(connector
+  (pt 928 96)
+  (pt 1056 96)
+  (bus)
+)
+(connector
+  (text "LEDG[8..0]"
+    (rect 936 78 1006 94)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 96)
+  (pt 928 1776)
+  (bus)
+)
+(symbol
+  (rect 608 176 656 208)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_0"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[0]"
+    (rect 264 174 299 190)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 192)
+  (pt 608 192)
+)
+(connector
+  (text "LEDR[0]"
+    (rect 799 174 848 190)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 192)
+  (pt 656 192)
+)
+(symbol
+  (rect 608 232 656 264)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_1"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[1]"
+    (rect 264 230 299 246)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 248)
+  (pt 608 248)
+)
+(connector
+  (text "LEDR[1]"
+    (rect 799 230 848 246)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 248)
+  (pt 656 248)
+)
+(symbol
+  (rect 608 288 656 320)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_2"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[2]"
+    (rect 264 286 299 302)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 304)
+  (pt 608 304)
+)
+(connector
+  (text "LEDR[2]"
+    (rect 799 286 848 302)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 304)
+  (pt 656 304)
+)
+(symbol
+  (rect 608 344 656 376)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_3"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[3]"
+    (rect 264 342 299 358)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 360)
+  (pt 608 360)
+)
+(connector
+  (text "LEDR[3]"
+    (rect 799 342 848 358)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 360)
+  (pt 656 360)
+)
+(symbol
+  (rect 608 400 656 432)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_4"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[4]"
+    (rect 264 398 299 414)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 416)
+  (pt 608 416)
+)
+(connector
+  (text "LEDR[4]"
+    (rect 799 398 848 414)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 416)
+  (pt 656 416)
+)
+(symbol
+  (rect 608 456 656 488)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_5"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[5]"
+    (rect 264 454 299 470)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 472)
+  (pt 608 472)
+)
+(connector
+  (text "LEDR[5]"
+    (rect 799 454 848 470)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 472)
+  (pt 656 472)
+)
+(symbol
+  (rect 608 512 656 544)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_6"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[6]"
+    (rect 264 510 299 526)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 528)
+  (pt 608 528)
+)
+(connector
+  (text "LEDR[6]"
+    (rect 799 510 848 526)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 528)
+  (pt 656 528)
+)
+(symbol
+  (rect 608 568 656 600)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_7"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[7]"
+    (rect 264 566 299 582)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 584)
+  (pt 608 584)
+)
+(connector
+  (text "LEDR[7]"
+    (rect 799 566 848 582)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 584)
+  (pt 656 584)
+)
+(symbol
+  (rect 608 624 656 656)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_8"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[8]"
+    (rect 264 622 299 638)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 640)
+  (pt 608 640)
+)
+(connector
+  (text "LEDR[8]"
+    (rect 799 622 848 638)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 640)
+  (pt 656 640)
+)
+(symbol
+  (rect 608 680 656 712)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_9"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[9]"
+    (rect 264 678 299 694)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 696)
+  (pt 608 696)
+)
+(connector
+  (text "LEDR[9]"
+    (rect 799 678 848 694)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 696)
+  (pt 656 696)
+)
+(symbol
+  (rect 608 736 656 768)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_10"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[10]"
+    (rect 264 734 306 750)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 752)
+  (pt 608 752)
+)
+(connector
+  (text "LEDR[10]"
+    (rect 792 734 848 750)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 752)
+  (pt 656 752)
+)
+(symbol
+  (rect 608 792 656 824)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_11"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[11]"
+    (rect 264 790 306 806)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 808)
+  (pt 608 808)
+)
+(connector
+  (text "LEDR[11]"
+    (rect 792 790 848 806)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 808)
+  (pt 656 808)
+)
+(symbol
+  (rect 608 848 656 880)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDR_12"
+    (rect 16 24 93 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "SW[12]"
+    (rect 264 846 306 862)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 864)
+  (pt 608 864)
+)
+(connector
+  (text "LEDR[12]"
+    (rect 792 846 848 862)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 864)
+  (pt 656 864)
+)
+(symbol
+  (rect 608 960 640 992)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_red13"
+    (rect 16 24 100 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDR[13]"
+    (rect 792 958 848 974)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 976)
+  (pt 640 976)
+)
+(symbol
+  (rect 608 1000 640 1032)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_red14"
+    (rect 16 24 100 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDR[14]"
+    (rect 792 998 848 1014)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 1016)
+  (pt 640 1016)
+)
+(symbol
+  (rect 608 1040 640 1072)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_red15"
+    (rect 16 24 100 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDR[15]"
+    (rect 792 1038 848 1054)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 1056)
+  (pt 640 1056)
+)
+(symbol
+  (rect 608 1080 640 1112)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_red16"
+    (rect 16 24 100 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDR[16]"
+    (rect 792 1078 848 1094)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 1096)
+  (pt 640 1096)
+)
+(symbol
+  (rect 608 1120 640 1152)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_red17"
+    (rect 16 24 100 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDR[17]"
+    (rect 792 1118 848 1134)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 864 1136)
+  (pt 640 1136)
+)
+(symbol
+  (rect 608 1232 656 1264)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDG_0"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "F[0]"
+    (rect 312 1230 340 1246)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 1248)
+  (pt 608 1248)
+)
+(connector
+  (text "LEDG[0]"
+    (rect 863 1230 912 1246)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1248)
+  (pt 656 1248)
+)
+(symbol
+  (rect 608 1288 656 1320)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDG_1"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "F[1]"
+    (rect 312 1286 340 1302)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 1304)
+  (pt 608 1304)
+)
+(connector
+  (text "LEDG[1]"
+    (rect 863 1286 912 1302)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1304)
+  (pt 656 1304)
+)
+(symbol
+  (rect 608 1344 656 1376)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDG_2"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "F[2]"
+    (rect 312 1342 340 1358)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 1360)
+  (pt 608 1360)
+)
+(connector
+  (text "LEDG[2]"
+    (rect 863 1342 912 1358)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1360)
+  (pt 656 1360)
+)
+(symbol
+  (rect 608 1400 656 1432)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDG_3"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "F[3]"
+    (rect 312 1398 340 1414)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 1416)
+  (pt 608 1416)
+)
+(connector
+  (text "LEDG[3]"
+    (rect 863 1398 912 1414)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1416)
+  (pt 656 1416)
+)
+(symbol
+  (rect 608 1456 656 1488)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDG_4"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "F[4]"
+    (rect 312 1454 340 1470)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 1472)
+  (pt 608 1472)
+)
+(connector
+  (text "LEDG[4]"
+    (rect 863 1454 912 1470)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1472)
+  (pt 656 1472)
+)
+(symbol
+  (rect 608 1512 656 1544)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "map_LEDG_5"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (text "F[5]"
+    (rect 312 1510 340 1526)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 304 1528)
+  (pt 608 1528)
+)
+(connector
+  (text "LEDG[5]"
+    (rect 863 1510 912 1526)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1528)
+  (pt 656 1528)
+)
+(symbol
+  (rect 608 1568 656 1600)
+  (text "WIRE"
+    (rect 1 0 22 9)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "status_led"
+    (rect 16 24 86 40)
+    (font "Arial"
+      (font_size 7)
+    )
+    (invisible)
+  )
+  (port
+    (pt 0 16)
+    (input)
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "IN"
+      (rect 2 7 12 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 0 16)
+      (pt 14 16)
+      (line_width 1)
+    )
+  )
+  (port
+    (pt 48 16)
+    (output)
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "OUT"
+      (rect 32 7 47 19)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (line
+      (pt 32 16)
+      (pt 48 16)
+      (line_width 1)
+    )
+  )
+  (drawing
+    (line
+      (pt 14 7)
+      (pt 32 16)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 14 7)
+      (line_width 1)
+    )
+    (line
+      (pt 14 25)
+      (pt 32 16)
+      (line_width 1)
+    )
+  )
+)
+(connector
+  (pt 192 1584)
+  (pt 608 1584)
+)
+(connector
+  (text "LEDG[6]"
+    (rect 863 1566 912 1582)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1584)
+  (pt 656 1584)
+)
+(symbol
+  (rect 608 1632 640 1664)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_green7"
+    (rect 16 24 107 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDG[7]"
+    (rect 863 1630 912 1646)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1648)
+  (pt 640 1648)
+)
+(symbol
+  (rect 608 1688 640 1720)
+  (text "GND"
+    (rect 6 8 16 29)
+    (font "Arial"
+      (font_size 6)
+    )
+    (vertical)
+  )
+  (text "unused_green8"
+    (rect 16 24 107 40)
+    (font "Intel Clear")
+    (vertical)
+    (invisible)
+  )
+  (port
+    (pt 32 16)
+    (output)
+    (text "1"
+      (rect 18 0 23 12)
+      (font "Courier New"
+        (bold)
+      )
+      (invisible)
+    )
+    (text "1"
+      (rect 20 18 32 23)
+      (font "Courier New"
+        (bold)
+      )
+      (vertical)
+      (invisible)
+    )
+    (line
+      (pt 24 16)
+      (pt 32 16)
+    )
+  )
+  (drawing
+    (line
+      (pt 24 8)
+      (pt 16 16)
+    )
+    (line
+      (pt 16 16)
+      (pt 24 24)
+    )
+    (line
+      (pt 24 8)
+      (pt 24 24)
+    )
+  )
+  (rotate270)
+)
+(connector
+  (text "LEDG[8]"
+    (rect 863 1686 912 1702)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 928 1704)
+  (pt 640 1704)
+)
+(junction
+  (pt 256 192)
+)
+(junction
+  (pt 256 248)
+)
+(junction
+  (pt 256 304)
+)
+(junction
+  (pt 256 360)
+)
+(junction
+  (pt 256 416)
+)
+(junction
+  (pt 256 472)
+)
+(junction
+  (pt 256 528)
+)
+(junction
+  (pt 256 584)
+)
+(junction
+  (pt 256 640)
+)
+(junction
+  (pt 256 696)
+)
+(junction
+  (pt 256 752)
+)
+(junction
+  (pt 256 808)
+)
+(junction
+  (pt 256 864)
+)
+(junction
+  (pt 304 1248)
+)
+(junction
+  (pt 304 1304)
+)
+(junction
+  (pt 304 1360)
+)
+(junction
+  (pt 304 1416)
+)
+(junction
+  (pt 304 1472)
+)
+(junction
+  (pt 304 1528)
+)
+(junction
+  (pt 864 192)
+)
+(junction
+  (pt 864 248)
+)
+(junction
+  (pt 864 304)
+)
+(junction
+  (pt 864 360)
+)
+(junction
+  (pt 864 416)
+)
+(junction
+  (pt 864 472)
+)
+(junction
+  (pt 864 528)
+)
+(junction
+  (pt 864 584)
+)
+(junction
+  (pt 864 640)
+)
+(junction
+  (pt 864 696)
+)
+(junction
+  (pt 864 752)
+)
+(junction
+  (pt 864 808)
+)
+(junction
+  (pt 864 864)
+)
+(junction
+  (pt 864 976)
+)
+(junction
+  (pt 864 1016)
+)
+(junction
+  (pt 864 1056)
+)
+(junction
+  (pt 864 1096)
+)
+(junction
+  (pt 864 1136)
+)
+(junction
+  (pt 928 1248)
+)
+(junction
+  (pt 928 1304)
+)
+(junction
+  (pt 928 1360)
+)
+(junction
+  (pt 928 1416)
+)
+(junction
+  (pt 928 1472)
+)
+(junction
+  (pt 928 1528)
+)
+(junction
+  (pt 928 1584)
+)
+(junction
+  (pt 928 1648)
+)
+(junction
+  (pt 928 1704)
+)

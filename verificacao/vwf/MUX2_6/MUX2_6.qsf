@@ -1,0 +1,5 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY MUX2_6
+set_global_assignment -name BDF_FILE ../../../MUX1.bdf
+set_global_assignment -name BDF_FILE ../../../MUX2_6.bdf

@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -21,136 +21,548 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
-	(input)
-	(rect 16 152 184 168)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MAG[4..0]" (rect 5 0 54 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+  (input)
+  (rect 24 152 192 168)
+  (text "INPUT"
+    (rect 125 0 153 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "MAG[4..0]"
+    (rect 5 0 68 16)
+    (font "Arial")
+  )
+  (pt 168 8)
+  (drawing
+    (line
+      (pt 84 12)
+      (pt 109 12)
+    )
+    (line
+      (pt 84 4)
+      (pt 109 4)
+    )
+    (line
+      (pt 113 8)
+      (pt 168 8)
+    )
+    (line
+      (pt 84 12)
+      (pt 84 4)
+    )
+    (line
+      (pt 109 4)
+      (pt 113 8)
+    )
+    (line
+      (pt 109 12)
+      (pt 113 8)
+    )
+  )
+  (text "VCC"
+    (rect 128 7 148 17)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+)
+(connector
+  (pt 192 160)
+  (pt 256 160)
+  (bus)
+)
+(connector
+  (text "MAG[4..0]"
+    (rect 264 142 327 158)
+    (font "Arial"
+      (font_size 7)
+    )
+  )
+  (pt 256 160)
+  (pt 256 448)
+  (bus)
 )
 (pin
-	(output)
-	(rect 768 88 944 104)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX_UNI[6..0]" (rect 90 0 163 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
+  (input)
+  (rect 24 88 192 104)
+  (text "INPUT"
+    (rect 125 0 153 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "EN"
+    (rect 5 0 19 16)
+    (font "Arial")
+  )
+  (pt 168 8)
+  (drawing
+    (line
+      (pt 84 12)
+      (pt 109 12)
+    )
+    (line
+      (pt 84 4)
+      (pt 109 4)
+    )
+    (line
+      (pt 113 8)
+      (pt 168 8)
+    )
+    (line
+      (pt 84 12)
+      (pt 84 4)
+    )
+    (line
+      (pt 109 4)
+      (pt 113 8)
+    )
+    (line
+      (pt 109 12)
+      (pt 113 8)
+    )
+  )
+  (text "VCC"
+    (rect 128 7 148 17)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+)
+(connector
+  (pt 192 96)
+  (pt 752 96)
+)
+(connector
+  (pt 752 96)
+  (pt 752 480)
+)
+(symbol
+  (rect 400 128 648 208)
+  (text "decod_7seg_unidade"
+    (rect 20 0 146 16)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (text "decoder0"
+    (rect 16 72 72 88)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (port
+    (pt 0 32)
+    (input)
+    (text "MAG[4..0]"
+      (rect 0 0 63 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "MAG[4..0]"
+      (rect 22 24 85 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 0 32)
+      (pt 16 32)
+      (line_width 3)
+    )
+  )
+  (port
+    (pt 248 32)
+    (output)
+    (text "HEX_UNI[6..0]"
+      (rect 0 0 91 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "HEX_UNI[6..0]"
+      (rect 135 24 226 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 248 32)
+      (pt 232 32)
+      (line_width 3)
+    )
+  )
+  (drawing
+    (rectangle
+      (rect 16 16 232 64)
+    )
+  )
+)
+(symbol
+  (rect 848 128 1096 240)
+  (text "ENABLE7"
+    (rect 20 0 69 16)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (text "enable0"
+    (rect 16 104 65 120)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (port
+    (pt 0 32)
+    (input)
+    (text "HEX_IN[6..0]"
+      (rect 0 0 84 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "HEX_IN[6..0]"
+      (rect 22 24 106 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 0 32)
+      (pt 16 32)
+      (line_width 3)
+    )
+  )
+  (port
+    (pt 0 64)
+    (input)
+    (text "EN"
+      (rect 0 0 14 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "EN"
+      (rect 22 56 36 72)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 0 64)
+      (pt 16 64)
+    )
+  )
+  (port
+    (pt 248 32)
+    (output)
+    (text "HEX_OUT[6..0]"
+      (rect 0 0 91 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "HEX_OUT[6..0]"
+      (rect 135 24 226 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 248 32)
+      (pt 232 32)
+      (line_width 3)
+    )
+  )
+  (drawing
+    (rectangle
+      (rect 16 16 232 96)
+    )
+  )
+)
+(connector
+  (pt 256 160)
+  (pt 400 160)
+  (bus)
+)
+(connector
+  (pt 648 160)
+  (pt 848 160)
+  (bus)
+)
+(connector
+  (pt 752 192)
+  (pt 848 192)
 )
 (pin
-	(output)
-	(rect 768 264 944 280)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX_DEZ[6..0]" (rect 90 0 165 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
+  (output)
+  (rect 1328 152 1504 168)
+  (text "OUTPUT"
+    (rect 1 0 39 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "HEX_UNI[6..0]"
+    (rect 90 0 181 16)
+    (font "Intel Clear")
+  )
+  (pt 0 8)
+  (drawing
+    (line
+      (pt 0 8)
+      (pt 52 8)
+    )
+    (line
+      (pt 52 4)
+      (pt 78 4)
+    )
+    (line
+      (pt 52 12)
+      (pt 78 12)
+    )
+    (line
+      (pt 52 12)
+      (pt 52 4)
+    )
+    (line
+      (pt 78 4)
+      (pt 82 8)
+    )
+    (line
+      (pt 82 8)
+      (pt 78 12)
+    )
+    (line
+      (pt 78 12)
+      (pt 82 8)
+    )
+  )
+)
+(connector
+  (pt 1096 160)
+  (pt 1328 160)
+  (bus)
 )
 (symbol
-	(rect 400 64 592 128)
-	(text "seg_unidades" (rect 5 0 86 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 43 24 60)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "MAG[4..0]" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
-		(text "MAG[4..0]" (rect 21 27 80 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "HEX_UNI[6..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
-		(text "HEX_UNI[6..0]" (rect 91 27 175 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 48))
-	)
+  (rect 400 416 648 496)
+  (text "decod_7seg_dezena"
+    (rect 20 0 139 16)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (text "decoder1"
+    (rect 16 72 72 88)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (port
+    (pt 0 32)
+    (input)
+    (text "MAG[4..0]"
+      (rect 0 0 63 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "MAG[4..0]"
+      (rect 22 24 85 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 0 32)
+      (pt 16 32)
+      (line_width 3)
+    )
+  )
+  (port
+    (pt 248 32)
+    (output)
+    (text "HEX_DEZ[6..0]"
+      (rect 0 0 91 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "HEX_DEZ[6..0]"
+      (rect 135 24 226 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 248 32)
+      (pt 232 32)
+      (line_width 3)
+    )
+  )
+  (drawing
+    (rectangle
+      (rect 16 16 232 64)
+    )
+  )
 )
 (symbol
-	(rect 400 240 592 304)
-	(text "seg_dezenas" (rect 5 0 80 19)(font "Intel Clear" (font_size 8)))
-	(text "inst1" (rect 8 43 30 60)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "MAG[4..0]" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
-		(text "MAG[4..0]" (rect 21 27 80 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "HEX_DEZ[6..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
-		(text "HEX_DEZ[6..0]" (rect 91 27 178 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 48))
-	)
+  (rect 848 416 1096 528)
+  (text "ENABLE7"
+    (rect 20 0 69 16)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (text "enable1"
+    (rect 16 104 65 120)
+    (font "Arial"
+      (font_size 8)
+    )
+  )
+  (port
+    (pt 0 32)
+    (input)
+    (text "HEX_IN[6..0]"
+      (rect 0 0 84 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "HEX_IN[6..0]"
+      (rect 22 24 106 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 0 32)
+      (pt 16 32)
+      (line_width 3)
+    )
+  )
+  (port
+    (pt 0 64)
+    (input)
+    (text "EN"
+      (rect 0 0 14 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "EN"
+      (rect 22 56 36 72)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 0 64)
+      (pt 16 64)
+    )
+  )
+  (port
+    (pt 248 32)
+    (output)
+    (text "HEX_OUT[6..0]"
+      (rect 0 0 91 16)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (text "HEX_OUT[6..0]"
+      (rect 135 24 226 40)
+      (font "Arial"
+        (font_size 8)
+      )
+    )
+    (line
+      (pt 248 32)
+      (pt 232 32)
+      (line_width 3)
+    )
+  )
+  (drawing
+    (rectangle
+      (rect 16 16 232 96)
+    )
+  )
 )
 (connector
-	(text "MAG[4..0]" (rect 296 79 343 96)(font "Intel Clear" ))
-	(pt 288 96)
-	(pt 400 96)
-	(bus)
+  (pt 256 448)
+  (pt 400 448)
+  (bus)
 )
 (connector
-	(text "MAG[4..0]" (rect 296 255 343 272)(font "Intel Clear" ))
-	(pt 288 272)
-	(pt 400 272)
-	(bus)
+  (pt 648 448)
+  (pt 848 448)
+  (bus)
 )
 (connector
-	(text "MAG[4..0]" (rect 294 136 341 153)(font "Intel Clear" ))
-	(pt 288 96)
-	(pt 288 160)
-	(bus)
+  (pt 752 480)
+  (pt 848 480)
+)
+(pin
+  (output)
+  (rect 1328 440 1504 456)
+  (text "OUTPUT"
+    (rect 1 0 39 10)
+    (font "Arial"
+      (font_size 6)
+    )
+  )
+  (text "HEX_DEZ[6..0]"
+    (rect 90 0 181 16)
+    (font "Intel Clear")
+  )
+  (pt 0 8)
+  (drawing
+    (line
+      (pt 0 8)
+      (pt 52 8)
+    )
+    (line
+      (pt 52 4)
+      (pt 78 4)
+    )
+    (line
+      (pt 52 12)
+      (pt 78 12)
+    )
+    (line
+      (pt 52 12)
+      (pt 52 4)
+    )
+    (line
+      (pt 78 4)
+      (pt 82 8)
+    )
+    (line
+      (pt 82 8)
+      (pt 78 12)
+    )
+    (line
+      (pt 78 12)
+      (pt 82 8)
+    )
+  )
 )
 (connector
-	(pt 288 160)
-	(pt 288 272)
-	(bus)
+  (pt 1096 448)
+  (pt 1328 448)
+  (bus)
 )
-(connector
-	(text "HEX_UNI[6..0]" (rect 600 79 666 96)(font "Intel Clear" ))
-	(pt 592 96)
-	(pt 768 96)
-	(bus)
+(junction
+  (pt 256 160)
 )
-(connector
-	(text "HEX_DEZ[6..0]" (rect 600 255 668 272)(font "Intel Clear" ))
-	(pt 592 272)
-	(pt 768 272)
-	(bus)
+(junction
+  (pt 256 448)
 )
-(connector
-	(text "MAG[4..0]" (rect 200 143 247 160)(font "Intel Clear" ))
-	(pt 184 160)
-	(pt 288 160)
-	(bus)
+(junction
+  (pt 752 192)
 )
-(junction (pt 288 160))
+(junction
+  (pt 752 480)
+)
